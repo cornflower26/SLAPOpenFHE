@@ -118,6 +118,18 @@ Ciphertext<Element> PKEBase<Element>::Encrypt(Element plaintext, const PublicKey
     return ciphertext;
 }
 
+template <class Element>
+Ciphertext<Element> PKEBase<Element>::Encrypt(Element plaintext, const PrivateKey<Element> privateKey,
+                                              const PublicKey<Element> publicKey) const {
+    return Ciphertext<Element>();
+}
+
+template <class Element>
+DecryptResult PKEBase<Element>::Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,
+                                        const PublicKey<Element> publicKey, Poly* plaintext) const {
+    return DecryptResult();
+}
+
 // makeSparse is not used by this scheme
 template <class Element>
 std::shared_ptr<std::vector<Element>> PKEBase<Element>::EncryptZeroCore(const PrivateKey<Element> privateKey,

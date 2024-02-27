@@ -68,10 +68,12 @@
 
 #include "scheme/bfvrns/bfvrns-scheme.h"
 #include "scheme/ckksrns/ckksrns-scheme.h"
+#include "scheme/slaprns/slaprns-scheme.h"
 
 #include "gen-cryptocontext.h"
 #include "scheme/ckksrns/cryptocontext-ckksrns.h"
 #include "scheme/bfvrns/cryptocontext-bfvrns.h"
 #include "scheme/bgvrns/cryptocontext-bgvrns.h"
+#include "scheme/slaprns/cryptocontext-slaprns.h"
 
 #endif /* SRC_LIB_OPENFHE_H_ */

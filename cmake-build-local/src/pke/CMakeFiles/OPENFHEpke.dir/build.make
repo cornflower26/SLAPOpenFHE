@@ -116,6 +116,9 @@ OPENFHEpke_EXTERNAL_OBJECTS = \
 "/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/scheme/ckksrns/ckksrns-utils.cpp.o" \
 "/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/scheme/cryptocontextparams-base-impl.cpp.o" \
 "/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.o" \
+"/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o" \
+"/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o" \
+"/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o" \
 "/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o" \
 "/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o" \
 "/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o" \
@@ -173,6 +176,9 @@ lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/ckksrns/
 lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/ckksrns/ckksrns-utils.cpp.o
 lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/cryptocontextparams-base-impl.cpp.o
 lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.o
+lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o
+lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o
+lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o
 lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o
 lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o
 lib/libOPENFHEpke.1.1.1.dylib: src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o

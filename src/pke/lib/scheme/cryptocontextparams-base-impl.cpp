@@ -88,6 +88,9 @@ void Params::SetToDefaults(SCHEME scheme) {
         case BGVRNS_SCHEME:
             SET_TO_SCHEME_DEFAULTS(BGVRNS_SCHEME);
             break;
+        case SLAPRNS_SCHEME:
+            SET_TO_SCHEME_DEFAULTS(SLAPRNS_SCHEME);
+            break;
         default:
             std::string errorMsg(std::string("Invalid scheme id: ") + std::to_string(scheme));
             OPENFHE_THROW(config_error, errorMsg);

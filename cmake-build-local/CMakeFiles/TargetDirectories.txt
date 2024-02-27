@@ -55,6 +55,7 @@
 /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/simple-integers.dir
 /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/simple-real-numbers-serial.dir
 /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/simple-real-numbers.dir
+/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/simple-slap-example.dir
 /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir
 /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir
 /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke/CMakeFiles/threshold-fhe-5p.dir

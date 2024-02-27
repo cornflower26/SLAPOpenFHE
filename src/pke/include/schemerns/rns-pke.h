@@ -72,6 +72,10 @@ public:
    */
     Ciphertext<DCRTPoly> Encrypt(DCRTPoly plaintext, const PublicKey<DCRTPoly> publicKey) const override;
 
+    Ciphertext<DCRTPoly> Encrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey, const PublicKey<DCRTPoly> publicKey) const override {
+        return PKEBase::Encrypt(plaintext, privateKey, publicKey);
+    }
+
     /**
    * Method for encrypting plaintex using LBC
    *
@@ -94,6 +98,11 @@ public:
    */
     DecryptResult Decrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
                           NativePoly* plaintext) const override;
+
+    DecryptResult Decrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
+                          const PublicKey<DCRTPoly> publicKey, Poly* plaintext) const override {
+        return PKEBase::Decrypt(ciphertext, privateKey, publicKey, plaintext);
+    }
 
     /**
    * Method for decrypting plaintext using LBC

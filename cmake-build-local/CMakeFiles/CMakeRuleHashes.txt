@@ -19,5 +19,5 @@ ebdf3d52233aac7daf91ae4a018907cd src/binfhe/binfheinfocmd
 fe3eb6cc2f67e8079438d1b37d152876 src/core/runcoretests
 f0b338026e1dab1d2db0c48dd95d0cd8 src/pke/CMakeFiles/pkeinfo
 f0b338026e1dab1d2db0c48dd95d0cd8 src/pke/CMakeFiles/testpke
-4659391b5a81b42a0c36fa070f403b78 src/pke/pkeinfocmd
+a77e70f05c8c7bac106fdaeb6dddacae src/pke/pkeinfocmd
 e201f22b42524b48d825fadff71654a8 src/pke/runpketests

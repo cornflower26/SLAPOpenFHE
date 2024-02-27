@@ -662,6 +662,11 @@ void DCRTPolyImpl<VecType>::SetValuesToZero() {
 }
 
 template <typename VecType>
+DCRTPolyImpl<VecType> DCRTPolyImpl<VecType>::AddRandomNoise(const Integer& modulus) const {
+    return DCRTPolyImpl::DCRTPolyType();
+}
+
+template <typename VecType>
 void DCRTPolyImpl<VecType>::SetValuesModSwitch(const DCRTPolyImpl& element, const NativeInteger& modulus) {
     if (element.GetNumOfElements() != 1) {
         OPENFHE_THROW(not_implemented_error, "SetValuesModSwitch is implemented only for a DCRTPoly with one tower.");
@@ -989,6 +994,7 @@ typename VecType::Integer DCRTPolyImpl<VecType>::GetWorkingModulus() const {
         modulusQ.MulEq(p->GetModulus());
     return modulusQ;
 }
+
 
 template <typename VecType>
 std::shared_ptr<typename DCRTPolyImpl<VecType>::Params> DCRTPolyImpl<VecType>::GetExtendedCRTBasis(

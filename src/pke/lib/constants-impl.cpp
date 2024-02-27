@@ -70,6 +70,22 @@ std::ostream& operator<<(std::ostream& s, PKESchemeFeature f) {
     return s;
 }
 
+std::ostream& operator<<(std::ostream& s, SLAPScheme f) {
+    switch (f) {
+        case NS:
+            s << "NS";
+            break;
+        case MS:
+            s << "MS";
+            break;
+        default:
+            s << "UNKNOWN";
+            break;
+    }
+    return s;
+}
+
+
 ScalingTechnique convertToScalingTechnique(const std::string& str) {
     if (str == "FIXEDMANUAL")
         return FIXEDMANUAL;

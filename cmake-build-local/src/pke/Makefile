@@ -541,6 +541,20 @@ simple-real-numbers/fast:
 .PHONY : simple-real-numbers/fast
 
 # Convenience name for target.
+src/pke/CMakeFiles/simple-slap-example.dir/rule:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-slap-example.dir/rule
+.PHONY : src/pke/CMakeFiles/simple-slap-example.dir/rule
+
+# Convenience name for target.
+simple-slap-example: src/pke/CMakeFiles/simple-slap-example.dir/rule
+.PHONY : simple-slap-example
+
+# fast build rule for target.
+simple-slap-example/fast:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/build
+.PHONY : simple-slap-example/fast
+
+# Convenience name for target.
 src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/rule:
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/rule
 .PHONY : src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/rule
@@ -1175,6 +1189,30 @@ examples/simple-real-numbers.s: examples/simple-real-numbers.cpp.s
 examples/simple-real-numbers.cpp.s:
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-real-numbers.dir/build.make src/pke/CMakeFiles/simple-real-numbers.dir/examples/simple-real-numbers.cpp.s
 .PHONY : examples/simple-real-numbers.cpp.s
+
+examples/simple-slap-example.o: examples/simple-slap-example.cpp.o
+.PHONY : examples/simple-slap-example.o
+
+# target to build an object file
+examples/simple-slap-example.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/examples/simple-slap-example.cpp.o
+.PHONY : examples/simple-slap-example.cpp.o
+
+examples/simple-slap-example.i: examples/simple-slap-example.cpp.i
+.PHONY : examples/simple-slap-example.i
+
+# target to preprocess a source file
+examples/simple-slap-example.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/examples/simple-slap-example.cpp.i
+.PHONY : examples/simple-slap-example.cpp.i
+
+examples/simple-slap-example.s: examples/simple-slap-example.cpp.s
+.PHONY : examples/simple-slap-example.s
+
+# target to generate assembly for a file
+examples/simple-slap-example.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/examples/simple-slap-example.cpp.s
+.PHONY : examples/simple-slap-example.cpp.s
 
 examples/tckks-interactive-mp-bootstrapping-Chebyshev.o: examples/tckks-interactive-mp-bootstrapping-Chebyshev.cpp.o
 .PHONY : examples/tckks-interactive-mp-bootstrapping-Chebyshev.o
@@ -2280,6 +2318,78 @@ lib/scheme/scheme-id-impl.cpp.s:
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.s
 .PHONY : lib/scheme/scheme-id-impl.cpp.s
 
+lib/scheme/slap/slaprns-cryptoparameters.o: lib/scheme/slap/slaprns-cryptoparameters.cpp.o
+.PHONY : lib/scheme/slap/slaprns-cryptoparameters.o
+
+# target to build an object file
+lib/scheme/slap/slaprns-cryptoparameters.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o
+.PHONY : lib/scheme/slap/slaprns-cryptoparameters.cpp.o
+
+lib/scheme/slap/slaprns-cryptoparameters.i: lib/scheme/slap/slaprns-cryptoparameters.cpp.i
+.PHONY : lib/scheme/slap/slaprns-cryptoparameters.i
+
+# target to preprocess a source file
+lib/scheme/slap/slaprns-cryptoparameters.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.i
+.PHONY : lib/scheme/slap/slaprns-cryptoparameters.cpp.i
+
+lib/scheme/slap/slaprns-cryptoparameters.s: lib/scheme/slap/slaprns-cryptoparameters.cpp.s
+.PHONY : lib/scheme/slap/slaprns-cryptoparameters.s
+
+# target to generate assembly for a file
+lib/scheme/slap/slaprns-cryptoparameters.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.s
+.PHONY : lib/scheme/slap/slaprns-cryptoparameters.cpp.s
+
+lib/scheme/slap/slaprns-parametergeneration.o: lib/scheme/slap/slaprns-parametergeneration.cpp.o
+.PHONY : lib/scheme/slap/slaprns-parametergeneration.o
+
+# target to build an object file
+lib/scheme/slap/slaprns-parametergeneration.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o
+.PHONY : lib/scheme/slap/slaprns-parametergeneration.cpp.o
+
+lib/scheme/slap/slaprns-parametergeneration.i: lib/scheme/slap/slaprns-parametergeneration.cpp.i
+.PHONY : lib/scheme/slap/slaprns-parametergeneration.i
+
+# target to preprocess a source file
+lib/scheme/slap/slaprns-parametergeneration.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.i
+.PHONY : lib/scheme/slap/slaprns-parametergeneration.cpp.i
+
+lib/scheme/slap/slaprns-parametergeneration.s: lib/scheme/slap/slaprns-parametergeneration.cpp.s
+.PHONY : lib/scheme/slap/slaprns-parametergeneration.s
+
+# target to generate assembly for a file
+lib/scheme/slap/slaprns-parametergeneration.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.s
+.PHONY : lib/scheme/slap/slaprns-parametergeneration.cpp.s
+
+lib/scheme/slap/slaprns-pke.o: lib/scheme/slap/slaprns-pke.cpp.o
+.PHONY : lib/scheme/slap/slaprns-pke.o
+
+# target to build an object file
+lib/scheme/slap/slaprns-pke.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o
+.PHONY : lib/scheme/slap/slaprns-pke.cpp.o
+
+lib/scheme/slap/slaprns-pke.i: lib/scheme/slap/slaprns-pke.cpp.i
+.PHONY : lib/scheme/slap/slaprns-pke.i
+
+# target to preprocess a source file
+lib/scheme/slap/slaprns-pke.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.i
+.PHONY : lib/scheme/slap/slaprns-pke.cpp.i
+
+lib/scheme/slap/slaprns-pke.s: lib/scheme/slap/slaprns-pke.cpp.s
+.PHONY : lib/scheme/slap/slaprns-pke.s
+
+# target to generate assembly for a file
+lib/scheme/slap/slaprns-pke.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.s
+.PHONY : lib/scheme/slap/slaprns-pke.cpp.s
+
 lib/schemebase/base-advancedshe.o: lib/schemebase/base-advancedshe.cpp.o
 .PHONY : lib/schemebase/base-advancedshe.o
 
@@ -3377,6 +3487,7 @@ help:
 	@echo "... simple-integers-serial-bgvrns"
 	@echo "... simple-real-numbers"
 	@echo "... simple-real-numbers-serial"
+	@echo "... simple-slap-example"
 	@echo "... tckks-interactive-mp-bootstrapping"
 	@echo "... tckks-interactive-mp-bootstrapping-Chebyshev"
 	@echo "... threshold-fhe"
@@ -3450,6 +3561,9 @@ help:
 	@echo "... examples/simple-real-numbers.o"
 	@echo "... examples/simple-real-numbers.i"
 	@echo "... examples/simple-real-numbers.s"
+	@echo "... examples/simple-slap-example.o"
+	@echo "... examples/simple-slap-example.i"
+	@echo "... examples/simple-slap-example.s"
 	@echo "... examples/tckks-interactive-mp-bootstrapping-Chebyshev.o"
 	@echo "... examples/tckks-interactive-mp-bootstrapping-Chebyshev.i"
 	@echo "... examples/tckks-interactive-mp-bootstrapping-Chebyshev.s"
@@ -3588,6 +3702,15 @@ help:
 	@echo "... lib/scheme/scheme-id-impl.o"
 	@echo "... lib/scheme/scheme-id-impl.i"
 	@echo "... lib/scheme/scheme-id-impl.s"
+	@echo "... lib/scheme/slap/slaprns-cryptoparameters.o"
+	@echo "... lib/scheme/slap/slaprns-cryptoparameters.i"
+	@echo "... lib/scheme/slap/slaprns-cryptoparameters.s"
+	@echo "... lib/scheme/slap/slaprns-parametergeneration.o"
+	@echo "... lib/scheme/slap/slaprns-parametergeneration.i"
+	@echo "... lib/scheme/slap/slaprns-parametergeneration.s"
+	@echo "... lib/scheme/slap/slaprns-pke.o"
+	@echo "... lib/scheme/slap/slaprns-pke.i"
+	@echo "... lib/scheme/slap/slaprns-pke.s"
 	@echo "... lib/schemebase/base-advancedshe.o"
 	@echo "... lib/schemebase/base-advancedshe.i"
 	@echo "... lib/schemebase/base-advancedshe.s"

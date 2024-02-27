@@ -268,6 +268,7 @@ src/pke/all: src/pke/CMakeFiles/simple-integers-serial.dir/all
 src/pke/all: src/pke/CMakeFiles/simple-integers.dir/all
 src/pke/all: src/pke/CMakeFiles/simple-real-numbers-serial.dir/all
 src/pke/all: src/pke/CMakeFiles/simple-real-numbers.dir/all
+src/pke/all: src/pke/CMakeFiles/simple-slap-example.dir/all
 src/pke/all: src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/all
 src/pke/all: src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/all
 src/pke/all: src/pke/CMakeFiles/threshold-fhe-5p.dir/all
@@ -306,6 +307,7 @@ src/pke/clean: src/pke/CMakeFiles/simple-integers-serial.dir/clean
 src/pke/clean: src/pke/CMakeFiles/simple-integers.dir/clean
 src/pke/clean: src/pke/CMakeFiles/simple-real-numbers-serial.dir/clean
 src/pke/clean: src/pke/CMakeFiles/simple-real-numbers.dir/clean
+src/pke/clean: src/pke/CMakeFiles/simple-slap-example.dir/clean
 src/pke/clean: src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/clean
 src/pke/clean: src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/clean
 src/pke/clean: src/pke/CMakeFiles/threshold-fhe-5p.dir/clean
@@ -516,7 +518,7 @@ CMakeFiles/testall.dir/all: src/binfhe/CMakeFiles/binfhe_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testall.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : CMakeFiles/testall.dir/rule
@@ -572,7 +574,7 @@ CMakeFiles/allmodules.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/allmodules.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/allmodules.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : CMakeFiles/allmodules.dir/rule
@@ -593,12 +595,12 @@ CMakeFiles/allmodules.dir/clean:
 src/core/CMakeFiles/coreobj.dir/all: CMakeFiles/third-party.dir/all
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/coreobj.dir/build.make src/core/CMakeFiles/coreobj.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/coreobj.dir/build.make src/core/CMakeFiles/coreobj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=39,40,41,42,43,44,45,46,47,48,49 "Built target coreobj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=39,40,41,42,43,44,45,46,47,48 "Built target coreobj"
 .PHONY : src/core/CMakeFiles/coreobj.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/coreobj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/coreobj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/coreobj.dir/rule
@@ -624,7 +626,7 @@ src/core/CMakeFiles/OPENFHEcore.dir/all: src/core/CMakeFiles/coreobj.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/OPENFHEcore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/OPENFHEcore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/OPENFHEcore.dir/rule
@@ -652,7 +654,7 @@ src/core/CMakeFiles/allcore.dir/all: src/core/CMakeFiles/allcoreexamples.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/allcore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/allcore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/allcore.dir/rule
@@ -673,12 +675,12 @@ src/core/CMakeFiles/allcore.dir/clean:
 src/core/CMakeFiles/core_tests.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core_tests.dir/build.make src/core/CMakeFiles/core_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core_tests.dir/build.make src/core/CMakeFiles/core_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=32,33,34,35,36,37,38 "Built target core_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=32,33,34,35,36,37 "Built target core_tests"
 .PHONY : src/core/CMakeFiles/core_tests.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/core_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/core_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/core_tests.dir/rule
@@ -704,7 +706,7 @@ src/core/CMakeFiles/testcore.dir/all: src/core/CMakeFiles/core_tests.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/testcore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/testcore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/testcore.dir/rule
@@ -725,12 +727,12 @@ src/core/CMakeFiles/testcore.dir/clean:
 src/core/CMakeFiles/parallel.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/parallel.dir/build.make src/core/CMakeFiles/parallel.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/parallel.dir/build.make src/core/CMakeFiles/parallel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=59 "Built target parallel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=58 "Built target parallel"
 .PHONY : src/core/CMakeFiles/parallel.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/parallel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/parallel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/parallel.dir/rule
@@ -751,12 +753,12 @@ src/core/CMakeFiles/parallel.dir/clean:
 src/core/CMakeFiles/sampling.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/sampling.dir/build.make src/core/CMakeFiles/sampling.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/sampling.dir/build.make src/core/CMakeFiles/sampling.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=91 "Built target sampling"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target sampling"
 .PHONY : src/core/CMakeFiles/sampling.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/sampling.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/sampling.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/sampling.dir/rule
@@ -783,7 +785,7 @@ src/core/CMakeFiles/allcoreexamples.dir/all: src/core/CMakeFiles/sampling.dir/al
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/allcoreexamples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/allcoreexamples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/allcoreexamples.dir/rule
@@ -804,12 +806,12 @@ src/core/CMakeFiles/allcoreexamples.dir/clean:
 src/core/CMakeFiles/coreinfo.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/coreinfo.dir/build.make src/core/CMakeFiles/coreinfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/coreinfo.dir/build.make src/core/CMakeFiles/coreinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target coreinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=38 "Built target coreinfo"
 .PHONY : src/core/CMakeFiles/coreinfo.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/coreinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/coreinfo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/coreinfo.dir/rule
@@ -831,12 +833,12 @@ src/pke/CMakeFiles/pkeobj.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 src/pke/CMakeFiles/pkeobj.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86 "Built target pkeobj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target pkeobj"
 .PHONY : src/pke/CMakeFiles/pkeobj.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/pkeobj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/pkeobj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/pkeobj.dir/rule
@@ -864,7 +866,7 @@ src/pke/CMakeFiles/OPENFHEpke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/a
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/OPENFHEpke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/OPENFHEpke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/OPENFHEpke.dir/rule
@@ -892,7 +894,7 @@ src/pke/CMakeFiles/allpke.dir/all: src/pke/CMakeFiles/allpkeexamples.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/allpke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/allpke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/allpke.dir/rule
@@ -915,12 +917,12 @@ src/pke/CMakeFiles/pke_tests.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/all
 src/pke/CMakeFiles/pke_tests.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pke_tests.dir/build.make src/pke/CMakeFiles/pke_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pke_tests.dir/build.make src/pke/CMakeFiles/pke_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=60,61,62,63,64,65,66,67,68,69 "Built target pke_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68 "Built target pke_tests"
 .PHONY : src/pke/CMakeFiles/pke_tests.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/pke_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/pke_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/pke_tests.dir/rule
@@ -946,7 +948,7 @@ src/pke/CMakeFiles/testpke.dir/all: src/pke/CMakeFiles/pke_tests.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/testpke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/testpke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/testpke.dir/rule
@@ -974,7 +976,7 @@ src/pke/CMakeFiles/advanced-ckks-bootstrapping.dir/all: src/binfhe/CMakeFiles/OP
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/advanced-ckks-bootstrapping.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/advanced-ckks-bootstrapping.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/advanced-ckks-bootstrapping.dir/rule
@@ -1002,7 +1004,7 @@ src/pke/CMakeFiles/advanced-real-numbers-128.dir/all: src/binfhe/CMakeFiles/OPEN
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/advanced-real-numbers-128.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/advanced-real-numbers-128.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/advanced-real-numbers-128.dir/rule
@@ -1030,7 +1032,7 @@ src/pke/CMakeFiles/advanced-real-numbers.dir/all: src/binfhe/CMakeFiles/OPENFHEb
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/advanced-real-numbers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/advanced-real-numbers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/advanced-real-numbers.dir/rule
@@ -1053,12 +1055,12 @@ src/pke/CMakeFiles/ckks-noise-flooding.dir/all: src/pke/CMakeFiles/OPENFHEpke.di
 src/pke/CMakeFiles/ckks-noise-flooding.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/ckks-noise-flooding.dir/build.make src/pke/CMakeFiles/ckks-noise-flooding.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/ckks-noise-flooding.dir/build.make src/pke/CMakeFiles/ckks-noise-flooding.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=30 "Built target ckks-noise-flooding"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target ckks-noise-flooding"
 .PHONY : src/pke/CMakeFiles/ckks-noise-flooding.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/ckks-noise-flooding.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/ckks-noise-flooding.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/ckks-noise-flooding.dir/rule
@@ -1081,12 +1083,12 @@ src/pke/CMakeFiles/depth-bfvrns-behz.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/
 src/pke/CMakeFiles/depth-bfvrns-behz.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/depth-bfvrns-behz.dir/build.make src/pke/CMakeFiles/depth-bfvrns-behz.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/depth-bfvrns-behz.dir/build.make src/pke/CMakeFiles/depth-bfvrns-behz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=50 "Built target depth-bfvrns-behz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=49 "Built target depth-bfvrns-behz"
 .PHONY : src/pke/CMakeFiles/depth-bfvrns-behz.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/depth-bfvrns-behz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/depth-bfvrns-behz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/depth-bfvrns-behz.dir/rule
@@ -1114,7 +1116,7 @@ src/pke/CMakeFiles/depth-bfvrns.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/depth-bfvrns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/depth-bfvrns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/depth-bfvrns.dir/rule
@@ -1137,12 +1139,12 @@ src/pke/CMakeFiles/depth-bgvrns.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/all
 src/pke/CMakeFiles/depth-bgvrns.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/depth-bgvrns.dir/build.make src/pke/CMakeFiles/depth-bgvrns.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/depth-bgvrns.dir/build.make src/pke/CMakeFiles/depth-bgvrns.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target depth-bgvrns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=50 "Built target depth-bgvrns"
 .PHONY : src/pke/CMakeFiles/depth-bgvrns.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/depth-bgvrns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/depth-bgvrns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/depth-bgvrns.dir/rule
@@ -1170,7 +1172,7 @@ src/pke/CMakeFiles/function-evaluation.dir/all: src/binfhe/CMakeFiles/OPENFHEbin
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/function-evaluation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/function-evaluation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/function-evaluation.dir/rule
@@ -1193,12 +1195,12 @@ src/pke/CMakeFiles/inner-product.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/all
 src/pke/CMakeFiles/inner-product.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/inner-product.dir/build.make src/pke/CMakeFiles/inner-product.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/inner-product.dir/build.make src/pke/CMakeFiles/inner-product.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=56 "Built target inner-product"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=55 "Built target inner-product"
 .PHONY : src/pke/CMakeFiles/inner-product.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/inner-product.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/inner-product.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/inner-product.dir/rule
@@ -1221,12 +1223,12 @@ src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/all: src/pke/CMakeFiles/OPEN
 src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/build.make src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/build.make src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target iterative-ckks-bootstrapping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=56 "Built target iterative-ckks-bootstrapping"
 .PHONY : src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/iterative-ckks-bootstrapping.dir/rule
@@ -1249,12 +1251,12 @@ src/pke/CMakeFiles/linearwsum-evaluation.dir/all: src/pke/CMakeFiles/OPENFHEpke.
 src/pke/CMakeFiles/linearwsum-evaluation.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/linearwsum-evaluation.dir/build.make src/pke/CMakeFiles/linearwsum-evaluation.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/linearwsum-evaluation.dir/build.make src/pke/CMakeFiles/linearwsum-evaluation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=58 "Built target linearwsum-evaluation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=57 "Built target linearwsum-evaluation"
 .PHONY : src/pke/CMakeFiles/linearwsum-evaluation.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/linearwsum-evaluation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/linearwsum-evaluation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/linearwsum-evaluation.dir/rule
@@ -1277,12 +1279,12 @@ src/pke/CMakeFiles/polynomial-evaluation.dir/all: src/pke/CMakeFiles/OPENFHEpke.
 src/pke/CMakeFiles/polynomial-evaluation.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/polynomial-evaluation.dir/build.make src/pke/CMakeFiles/polynomial-evaluation.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/polynomial-evaluation.dir/build.make src/pke/CMakeFiles/polynomial-evaluation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=89 "Built target polynomial-evaluation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target polynomial-evaluation"
 .PHONY : src/pke/CMakeFiles/polynomial-evaluation.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/polynomial-evaluation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/polynomial-evaluation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/polynomial-evaluation.dir/rule
@@ -1305,12 +1307,12 @@ src/pke/CMakeFiles/pre-buffer.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/all
 src/pke/CMakeFiles/pre-buffer.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pre-buffer.dir/build.make src/pke/CMakeFiles/pre-buffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pre-buffer.dir/build.make src/pke/CMakeFiles/pre-buffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=90 "Built target pre-buffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=89 "Built target pre-buffer"
 .PHONY : src/pke/CMakeFiles/pre-buffer.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/pre-buffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/pre-buffer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/pre-buffer.dir/rule
@@ -1333,12 +1335,12 @@ src/pke/CMakeFiles/rotation.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/all
 src/pke/CMakeFiles/rotation.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/rotation.dir/build.make src/pke/CMakeFiles/rotation.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/rotation.dir/build.make src/pke/CMakeFiles/rotation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target rotation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=90 "Built target rotation"
 .PHONY : src/pke/CMakeFiles/rotation.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/rotation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/rotation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/rotation.dir/rule
@@ -1361,12 +1363,12 @@ src/pke/CMakeFiles/scheme-switching.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/a
 src/pke/CMakeFiles/scheme-switching.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/scheme-switching.dir/build.make src/pke/CMakeFiles/scheme-switching.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/scheme-switching.dir/build.make src/pke/CMakeFiles/scheme-switching.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target scheme-switching"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=91 "Built target scheme-switching"
 .PHONY : src/pke/CMakeFiles/scheme-switching.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/scheme-switching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/scheme-switching.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/scheme-switching.dir/rule
@@ -1389,12 +1391,12 @@ src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/all: src/pke/CMakeFiles/OPENFHE
 src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/build.make src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/build.make src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=93 "Built target simple-ckks-bootstrapping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=92 "Built target simple-ckks-bootstrapping"
 .PHONY : src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-ckks-bootstrapping.dir/rule
@@ -1417,12 +1419,12 @@ src/pke/CMakeFiles/simple-integers-bgvrns.dir/all: src/pke/CMakeFiles/OPENFHEpke
 src/pke/CMakeFiles/simple-integers-bgvrns.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers-bgvrns.dir/build.make src/pke/CMakeFiles/simple-integers-bgvrns.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers-bgvrns.dir/build.make src/pke/CMakeFiles/simple-integers-bgvrns.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=94 "Built target simple-integers-bgvrns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target simple-integers-bgvrns"
 .PHONY : src/pke/CMakeFiles/simple-integers-bgvrns.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-integers-bgvrns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-integers-bgvrns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-integers-bgvrns.dir/rule
@@ -1445,12 +1447,12 @@ src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/all: src/pke/CMakeFiles/OPE
 src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/build.make src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/build.make src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=95 "Built target simple-integers-serial-bgvrns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target simple-integers-serial-bgvrns"
 .PHONY : src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-integers-serial-bgvrns.dir/rule
@@ -1473,12 +1475,12 @@ src/pke/CMakeFiles/simple-integers-serial.dir/all: src/pke/CMakeFiles/OPENFHEpke
 src/pke/CMakeFiles/simple-integers-serial.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers-serial.dir/build.make src/pke/CMakeFiles/simple-integers-serial.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers-serial.dir/build.make src/pke/CMakeFiles/simple-integers-serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target simple-integers-serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=94 "Built target simple-integers-serial"
 .PHONY : src/pke/CMakeFiles/simple-integers-serial.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-integers-serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-integers-serial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-integers-serial.dir/rule
@@ -1501,12 +1503,12 @@ src/pke/CMakeFiles/simple-integers.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/al
 src/pke/CMakeFiles/simple-integers.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers.dir/build.make src/pke/CMakeFiles/simple-integers.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-integers.dir/build.make src/pke/CMakeFiles/simple-integers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target simple-integers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=93 "Built target simple-integers"
 .PHONY : src/pke/CMakeFiles/simple-integers.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-integers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-integers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-integers.dir/rule
@@ -1529,12 +1531,12 @@ src/pke/CMakeFiles/simple-real-numbers-serial.dir/all: src/pke/CMakeFiles/OPENFH
 src/pke/CMakeFiles/simple-real-numbers-serial.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-real-numbers-serial.dir/build.make src/pke/CMakeFiles/simple-real-numbers-serial.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-real-numbers-serial.dir/build.make src/pke/CMakeFiles/simple-real-numbers-serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target simple-real-numbers-serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=96 "Built target simple-real-numbers-serial"
 .PHONY : src/pke/CMakeFiles/simple-real-numbers-serial.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-real-numbers-serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-real-numbers-serial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-real-numbers-serial.dir/rule
@@ -1557,12 +1559,12 @@ src/pke/CMakeFiles/simple-real-numbers.dir/all: src/pke/CMakeFiles/OPENFHEpke.di
 src/pke/CMakeFiles/simple-real-numbers.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-real-numbers.dir/build.make src/pke/CMakeFiles/simple-real-numbers.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-real-numbers.dir/build.make src/pke/CMakeFiles/simple-real-numbers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=96 "Built target simple-real-numbers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=95 "Built target simple-real-numbers"
 .PHONY : src/pke/CMakeFiles/simple-real-numbers.dir/all
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/simple-real-numbers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-real-numbers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/simple-real-numbers.dir/rule
@@ -1575,6 +1577,34 @@ simple-real-numbers: src/pke/CMakeFiles/simple-real-numbers.dir/rule
 src/pke/CMakeFiles/simple-real-numbers.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-real-numbers.dir/build.make src/pke/CMakeFiles/simple-real-numbers.dir/clean
 .PHONY : src/pke/CMakeFiles/simple-real-numbers.dir/clean
+
+#=============================================================================
+# Target rules for target src/pke/CMakeFiles/simple-slap-example.dir
+
+# All Build rule for target.
+src/pke/CMakeFiles/simple-slap-example.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
+src/pke/CMakeFiles/simple-slap-example.dir/all: src/pke/CMakeFiles/OPENFHEpke.dir/all
+src/pke/CMakeFiles/simple-slap-example.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
+	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target simple-slap-example"
+.PHONY : src/pke/CMakeFiles/simple-slap-example.dir/all
+
+# Build rule for subdir invocation for target.
+src/pke/CMakeFiles/simple-slap-example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/simple-slap-example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
+.PHONY : src/pke/CMakeFiles/simple-slap-example.dir/rule
+
+# Convenience name for target.
+simple-slap-example: src/pke/CMakeFiles/simple-slap-example.dir/rule
+.PHONY : simple-slap-example
+
+# clean rule for target.
+src/pke/CMakeFiles/simple-slap-example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/clean
+.PHONY : src/pke/CMakeFiles/simple-slap-example.dir/clean
 
 #=============================================================================
 # Target rules for target src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir
@@ -1590,7 +1620,7 @@ src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/all: src/bin
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/rule
@@ -1618,7 +1648,7 @@ src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/all: src/binfhe/CMakeF
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/rule
@@ -1646,7 +1676,7 @@ src/pke/CMakeFiles/threshold-fhe-5p.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/threshold-fhe-5p.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/threshold-fhe-5p.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/threshold-fhe-5p.dir/rule
@@ -1674,7 +1704,7 @@ src/pke/CMakeFiles/threshold-fhe.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.di
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/threshold-fhe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/threshold-fhe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/threshold-fhe.dir/rule
@@ -1714,6 +1744,7 @@ src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/simple-integers-se
 src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/simple-integers.dir/all
 src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/simple-real-numbers-serial.dir/all
 src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/simple-real-numbers.dir/all
+src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/simple-slap-example.dir/all
 src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping-Chebyshev.dir/all
 src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/tckks-interactive-mp-bootstrapping.dir/all
 src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/threshold-fhe-5p.dir/all
@@ -1725,7 +1756,7 @@ src/pke/CMakeFiles/allpkeexamples.dir/all: src/pke/CMakeFiles/threshold-fhe.dir/
 
 # Build rule for subdir invocation for target.
 src/pke/CMakeFiles/allpkeexamples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pke/CMakeFiles/allpkeexamples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/pke/CMakeFiles/allpkeexamples.dir/rule
@@ -1772,12 +1803,12 @@ src/pke/CMakeFiles/pkeinfo.dir/clean:
 src/binfhe/CMakeFiles/binfheobj.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/binfheobj.dir/build.make src/binfhe/CMakeFiles/binfheobj.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/binfheobj.dir/build.make src/binfhe/CMakeFiles/binfheobj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=19,20,21 "Built target binfheobj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=19,20 "Built target binfheobj"
 .PHONY : src/binfhe/CMakeFiles/binfheobj.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/binfheobj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/binfheobj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/binfheobj.dir/rule
@@ -1804,7 +1835,7 @@ src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all: src/binfhe/CMakeFiles/binfheobj.dir
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/rule
@@ -1832,7 +1863,7 @@ src/binfhe/CMakeFiles/allbinfhe.dir/all: src/binfhe/CMakeFiles/allbinfheexamples
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/allbinfhe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/allbinfhe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/allbinfhe.dir/rule
@@ -1854,12 +1885,12 @@ src/binfhe/CMakeFiles/binfhe_tests.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/
 src/binfhe/CMakeFiles/binfhe_tests.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/binfhe_tests.dir/build.make src/binfhe/CMakeFiles/binfhe_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/binfhe_tests.dir/build.make src/binfhe/CMakeFiles/binfhe_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=16,17,18 "Built target binfhe_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=16,17 "Built target binfhe_tests"
 .PHONY : src/binfhe/CMakeFiles/binfhe_tests.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/binfhe_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/binfhe_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/binfhe_tests.dir/rule
@@ -1885,7 +1916,7 @@ src/binfhe/CMakeFiles/testbinfhe.dir/all: src/binfhe/CMakeFiles/binfhe_tests.dir
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/testbinfhe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/testbinfhe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/testbinfhe.dir/rule
@@ -1912,7 +1943,7 @@ src/binfhe/CMakeFiles/boolean-ap.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.di
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-ap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-ap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-ap.dir/rule
@@ -1934,12 +1965,12 @@ src/binfhe/CMakeFiles/boolean-lmkcdey.dir/all: src/core/CMakeFiles/OPENFHEcore.d
 src/binfhe/CMakeFiles/boolean-lmkcdey.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-lmkcdey.dir/build.make src/binfhe/CMakeFiles/boolean-lmkcdey.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-lmkcdey.dir/build.make src/binfhe/CMakeFiles/boolean-lmkcdey.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-lmkcdey"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=23 "Built target boolean-lmkcdey"
 .PHONY : src/binfhe/CMakeFiles/boolean-lmkcdey.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-lmkcdey.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-lmkcdey.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-lmkcdey.dir/rule
@@ -1961,12 +1992,12 @@ src/binfhe/CMakeFiles/boolean-multi-input.dir/all: src/core/CMakeFiles/OPENFHEco
 src/binfhe/CMakeFiles/boolean-multi-input.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-multi-input.dir/build.make src/binfhe/CMakeFiles/boolean-multi-input.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-multi-input.dir/build.make src/binfhe/CMakeFiles/boolean-multi-input.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=24 "Built target boolean-multi-input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-multi-input"
 .PHONY : src/binfhe/CMakeFiles/boolean-multi-input.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-multi-input.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-multi-input.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-multi-input.dir/rule
@@ -1988,12 +2019,12 @@ src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/all: src
 src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/build.make src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/build.make src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=26 "Built target boolean-serial-binary-dynamic-large-precision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-serial-binary-dynamic-large-precision"
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-binary-dynamic-large-precision.dir/rule
@@ -2020,7 +2051,7 @@ src/binfhe/CMakeFiles/boolean-serial-binary.dir/all: src/binfhe/CMakeFiles/OPENF
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-serial-binary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-serial-binary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-binary.dir/rule
@@ -2042,12 +2073,12 @@ src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/all: src/c
 src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/build.make src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/build.make src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-serial-json-dynamic-large-precision"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=27 "Built target boolean-serial-json-dynamic-large-precision"
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-json-dynamic-large-precision.dir/rule
@@ -2069,12 +2100,12 @@ src/binfhe/CMakeFiles/boolean-serial-json.dir/all: src/core/CMakeFiles/OPENFHEco
 src/binfhe/CMakeFiles/boolean-serial-json.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-json.dir/build.make src/binfhe/CMakeFiles/boolean-serial-json.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-json.dir/build.make src/binfhe/CMakeFiles/boolean-serial-json.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=27 "Built target boolean-serial-json"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-serial-json"
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-json.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-serial-json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-serial-json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-json.dir/rule
@@ -2096,12 +2127,12 @@ src/binfhe/CMakeFiles/boolean-truth-tables.dir/all: src/core/CMakeFiles/OPENFHEc
 src/binfhe/CMakeFiles/boolean-truth-tables.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-truth-tables.dir/build.make src/binfhe/CMakeFiles/boolean-truth-tables.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-truth-tables.dir/build.make src/binfhe/CMakeFiles/boolean-truth-tables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=29 "Built target boolean-truth-tables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-truth-tables"
 .PHONY : src/binfhe/CMakeFiles/boolean-truth-tables.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-truth-tables.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-truth-tables.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-truth-tables.dir/rule
@@ -2123,12 +2154,12 @@ src/binfhe/CMakeFiles/boolean.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 src/binfhe/CMakeFiles/boolean.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean.dir/build.make src/binfhe/CMakeFiles/boolean.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean.dir/build.make src/binfhe/CMakeFiles/boolean.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=21 "Built target boolean"
 .PHONY : src/binfhe/CMakeFiles/boolean.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean.dir/rule
@@ -2150,12 +2181,12 @@ src/binfhe/CMakeFiles/eval-decomp.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/a
 src/binfhe/CMakeFiles/eval-decomp.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-decomp.dir/build.make src/binfhe/CMakeFiles/eval-decomp.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-decomp.dir/build.make src/binfhe/CMakeFiles/eval-decomp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=51 "Built target eval-decomp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target eval-decomp"
 .PHONY : src/binfhe/CMakeFiles/eval-decomp.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/eval-decomp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/eval-decomp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/eval-decomp.dir/rule
@@ -2177,12 +2208,12 @@ src/binfhe/CMakeFiles/eval-flooring.dir/all: src/core/CMakeFiles/OPENFHEcore.dir
 src/binfhe/CMakeFiles/eval-flooring.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-flooring.dir/build.make src/binfhe/CMakeFiles/eval-flooring.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-flooring.dir/build.make src/binfhe/CMakeFiles/eval-flooring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=52 "Built target eval-flooring"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=51 "Built target eval-flooring"
 .PHONY : src/binfhe/CMakeFiles/eval-flooring.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/eval-flooring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/eval-flooring.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/eval-flooring.dir/rule
@@ -2204,12 +2235,12 @@ src/binfhe/CMakeFiles/eval-function.dir/all: src/core/CMakeFiles/OPENFHEcore.dir
 src/binfhe/CMakeFiles/eval-function.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-function.dir/build.make src/binfhe/CMakeFiles/eval-function.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-function.dir/build.make src/binfhe/CMakeFiles/eval-function.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=53 "Built target eval-function"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=52 "Built target eval-function"
 .PHONY : src/binfhe/CMakeFiles/eval-function.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/eval-function.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/eval-function.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/eval-function.dir/rule
@@ -2231,12 +2262,12 @@ src/binfhe/CMakeFiles/eval-sign.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/all
 src/binfhe/CMakeFiles/eval-sign.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-sign.dir/build.make src/binfhe/CMakeFiles/eval-sign.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-sign.dir/build.make src/binfhe/CMakeFiles/eval-sign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=54 "Built target eval-sign"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target eval-sign"
 .PHONY : src/binfhe/CMakeFiles/eval-sign.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/eval-sign.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/eval-sign.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/eval-sign.dir/rule
@@ -2258,12 +2289,12 @@ src/binfhe/CMakeFiles/boolean-ap-pke.dir/all: src/core/CMakeFiles/OPENFHEcore.di
 src/binfhe/CMakeFiles/boolean-ap-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-ap-pke.dir/build.make src/binfhe/CMakeFiles/boolean-ap-pke.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-ap-pke.dir/build.make src/binfhe/CMakeFiles/boolean-ap-pke.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=23 "Built target boolean-ap-pke"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-ap-pke"
 .PHONY : src/binfhe/CMakeFiles/boolean-ap-pke.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-ap-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-ap-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-ap-pke.dir/rule
@@ -2285,12 +2316,12 @@ src/binfhe/CMakeFiles/boolean-pke.dir/all: src/core/CMakeFiles/OPENFHEcore.dir/a
 src/binfhe/CMakeFiles/boolean-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-pke.dir/build.make src/binfhe/CMakeFiles/boolean-pke.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-pke.dir/build.make src/binfhe/CMakeFiles/boolean-pke.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-pke"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=24 "Built target boolean-pke"
 .PHONY : src/binfhe/CMakeFiles/boolean-pke.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-pke.dir/rule
@@ -2312,12 +2343,12 @@ src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/all: src/core/CMakeFiles/OPE
 src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/build.make src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/build.make src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-serial-binary-pke"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=26 "Built target boolean-serial-binary-pke"
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-binary-pke.dir/rule
@@ -2344,7 +2375,7 @@ src/binfhe/CMakeFiles/boolean-serial-json-pke.dir/all: src/binfhe/CMakeFiles/OPE
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-serial-json-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-serial-json-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-serial-json-pke.dir/rule
@@ -2366,12 +2397,12 @@ src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/all: src/core/CMakeFiles/OPEN
 src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/build.make src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/build.make src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target boolean-truth-tables-pke"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=29 "Built target boolean-truth-tables-pke"
 .PHONY : src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/boolean-truth-tables-pke.dir/rule
@@ -2398,7 +2429,7 @@ src/binfhe/CMakeFiles/eval-flooring-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbi
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/eval-flooring-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/eval-flooring-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/eval-flooring-pke.dir/rule
@@ -2420,12 +2451,12 @@ src/binfhe/CMakeFiles/eval-function-pke.dir/all: src/core/CMakeFiles/OPENFHEcore
 src/binfhe/CMakeFiles/eval-function-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.dir/all
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-function-pke.dir/build.make src/binfhe/CMakeFiles/eval-function-pke.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/eval-function-pke.dir/build.make src/binfhe/CMakeFiles/eval-function-pke.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target eval-function-pke"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=53 "Built target eval-function-pke"
 .PHONY : src/binfhe/CMakeFiles/eval-function-pke.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/eval-function-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/eval-function-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/eval-function-pke.dir/rule
@@ -2470,7 +2501,7 @@ src/binfhe/CMakeFiles/allbinfheexamples.dir/all: src/binfhe/CMakeFiles/eval-func
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/allbinfheexamples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/allbinfheexamples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/allbinfheexamples.dir/rule
@@ -2491,12 +2522,12 @@ src/binfhe/CMakeFiles/allbinfheexamples.dir/clean:
 src/binfhe/CMakeFiles/binfheinfo.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/binfheinfo.dir/build.make src/binfhe/CMakeFiles/binfheinfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/binfhe/CMakeFiles/binfheinfo.dir/build.make src/binfhe/CMakeFiles/binfheinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target binfheinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=18 "Built target binfheinfo"
 .PHONY : src/binfhe/CMakeFiles/binfheinfo.dir/all
 
 # Build rule for subdir invocation for target.
 src/binfhe/CMakeFiles/binfheinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binfhe/CMakeFiles/binfheinfo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : src/binfhe/CMakeFiles/binfheinfo.dir/rule
@@ -2577,7 +2608,7 @@ benchmark/CMakeFiles/IntegerMath.dir/all: third-party/google-benchmark/src/CMake
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/IntegerMath.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/IntegerMath.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/IntegerMath.dir/rule
@@ -2606,7 +2637,7 @@ benchmark/CMakeFiles/Lattice.dir/all: third-party/google-benchmark/src/CMakeFile
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/Lattice.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/Lattice.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/Lattice.dir/rule
@@ -2635,7 +2666,7 @@ benchmark/CMakeFiles/NbTheory.dir/all: third-party/google-benchmark/src/CMakeFil
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/NbTheory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/NbTheory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/NbTheory.dir/rule
@@ -2664,7 +2695,7 @@ benchmark/CMakeFiles/VectorMath.dir/all: third-party/google-benchmark/src/CMakeF
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/VectorMath.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/VectorMath.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/VectorMath.dir/rule
@@ -2688,12 +2719,12 @@ benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/all: src/binfhe/CMakeFiles/OP
 benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/build.make benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/build.make benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target bfv-mult-method-benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=12 "Built target bfv-mult-method-benchmark"
 .PHONY : benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/bfv-mult-method-benchmark.dir/rule
@@ -2722,7 +2753,7 @@ benchmark/CMakeFiles/binfhe-ap-pke.dir/all: third-party/google-benchmark/src/CMa
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/binfhe-ap-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/binfhe-ap-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/binfhe-ap-pke.dir/rule
@@ -2751,7 +2782,7 @@ benchmark/CMakeFiles/binfhe-ap.dir/all: third-party/google-benchmark/src/CMakeFi
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/binfhe-ap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/binfhe-ap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/binfhe-ap.dir/rule
@@ -2775,12 +2806,12 @@ benchmark/CMakeFiles/binfhe-ginx-pke.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfh
 benchmark/CMakeFiles/binfhe-ginx-pke.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/binfhe-ginx-pke.dir/build.make benchmark/CMakeFiles/binfhe-ginx-pke.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/binfhe-ginx-pke.dir/build.make benchmark/CMakeFiles/binfhe-ginx-pke.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=15 "Built target binfhe-ginx-pke"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target binfhe-ginx-pke"
 .PHONY : benchmark/CMakeFiles/binfhe-ginx-pke.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/binfhe-ginx-pke.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/binfhe-ginx-pke.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/binfhe-ginx-pke.dir/rule
@@ -2809,7 +2840,7 @@ benchmark/CMakeFiles/binfhe-ginx.dir/all: third-party/google-benchmark/src/CMake
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/binfhe-ginx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/binfhe-ginx.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/binfhe-ginx.dir/rule
@@ -2833,12 +2864,12 @@ benchmark/CMakeFiles/binfhe-lmkcdey.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe
 benchmark/CMakeFiles/binfhe-lmkcdey.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/binfhe-lmkcdey.dir/build.make benchmark/CMakeFiles/binfhe-lmkcdey.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/binfhe-lmkcdey.dir/build.make benchmark/CMakeFiles/binfhe-lmkcdey.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target binfhe-lmkcdey"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=15 "Built target binfhe-lmkcdey"
 .PHONY : benchmark/CMakeFiles/binfhe-lmkcdey.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/binfhe-lmkcdey.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/binfhe-lmkcdey.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/binfhe-lmkcdey.dir/rule
@@ -2862,12 +2893,12 @@ benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/all: src/binfhe/CMakeFi
 benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/build.make benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/build.make benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target compare-bfv-hps-leveled-vs-behz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=30 "Built target compare-bfv-hps-leveled-vs-behz"
 .PHONY : benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/compare-bfv-hps-leveled-vs-behz.dir/rule
@@ -2896,7 +2927,7 @@ benchmark/CMakeFiles/compare-bfvrns-vs-bgvrns.dir/all: third-party/google-benchm
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/compare-bfvrns-vs-bgvrns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/compare-bfvrns-vs-bgvrns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/compare-bfvrns-vs-bgvrns.dir/rule
@@ -2920,12 +2951,12 @@ benchmark/CMakeFiles/fft-ckks-encoding.dir/all: src/binfhe/CMakeFiles/OPENFHEbin
 benchmark/CMakeFiles/fft-ckks-encoding.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/fft-ckks-encoding.dir/build.make benchmark/CMakeFiles/fft-ckks-encoding.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/fft-ckks-encoding.dir/build.make benchmark/CMakeFiles/fft-ckks-encoding.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=55 "Built target fft-ckks-encoding"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=54 "Built target fft-ckks-encoding"
 .PHONY : benchmark/CMakeFiles/fft-ckks-encoding.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/fft-ckks-encoding.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/fft-ckks-encoding.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/fft-ckks-encoding.dir/rule
@@ -2949,12 +2980,12 @@ benchmark/CMakeFiles/lib-benchmark.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe.
 benchmark/CMakeFiles/lib-benchmark.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/lib-benchmark.dir/build.make benchmark/CMakeFiles/lib-benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/lib-benchmark.dir/build.make benchmark/CMakeFiles/lib-benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=57 "Built target lib-benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target lib-benchmark"
 .PHONY : benchmark/CMakeFiles/lib-benchmark.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/lib-benchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/lib-benchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/lib-benchmark.dir/rule
@@ -2983,7 +3014,7 @@ benchmark/CMakeFiles/mult-vs-square.dir/all: third-party/google-benchmark/src/CM
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/mult-vs-square.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/mult-vs-square.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/mult-vs-square.dir/rule
@@ -3007,12 +3038,12 @@ benchmark/CMakeFiles/poly-benchmark-16k.dir/all: src/binfhe/CMakeFiles/OPENFHEbi
 benchmark/CMakeFiles/poly-benchmark-16k.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/poly-benchmark-16k.dir/build.make benchmark/CMakeFiles/poly-benchmark-16k.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/poly-benchmark-16k.dir/build.make benchmark/CMakeFiles/poly-benchmark-16k.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target poly-benchmark-16k"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=86 "Built target poly-benchmark-16k"
 .PHONY : benchmark/CMakeFiles/poly-benchmark-16k.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/poly-benchmark-16k.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/poly-benchmark-16k.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/poly-benchmark-16k.dir/rule
@@ -3041,7 +3072,7 @@ benchmark/CMakeFiles/poly-benchmark-1k.dir/all: third-party/google-benchmark/src
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/poly-benchmark-1k.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/poly-benchmark-1k.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/poly-benchmark-1k.dir/rule
@@ -3065,12 +3096,12 @@ benchmark/CMakeFiles/poly-benchmark-4k.dir/all: src/binfhe/CMakeFiles/OPENFHEbin
 benchmark/CMakeFiles/poly-benchmark-4k.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/poly-benchmark-4k.dir/build.make benchmark/CMakeFiles/poly-benchmark-4k.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/poly-benchmark-4k.dir/build.make benchmark/CMakeFiles/poly-benchmark-4k.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=88 "Built target poly-benchmark-4k"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target poly-benchmark-4k"
 .PHONY : benchmark/CMakeFiles/poly-benchmark-4k.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/poly-benchmark-4k.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/poly-benchmark-4k.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/poly-benchmark-4k.dir/rule
@@ -3094,12 +3125,12 @@ benchmark/CMakeFiles/poly-benchmark-64k.dir/all: src/binfhe/CMakeFiles/OPENFHEbi
 benchmark/CMakeFiles/poly-benchmark-64k.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/poly-benchmark-64k.dir/build.make benchmark/CMakeFiles/poly-benchmark-64k.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/poly-benchmark-64k.dir/build.make benchmark/CMakeFiles/poly-benchmark-64k.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target poly-benchmark-64k"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=88 "Built target poly-benchmark-64k"
 .PHONY : benchmark/CMakeFiles/poly-benchmark-64k.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/poly-benchmark-64k.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/poly-benchmark-64k.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/poly-benchmark-64k.dir/rule
@@ -3123,12 +3154,12 @@ benchmark/CMakeFiles/serialize-ckks.dir/all: src/binfhe/CMakeFiles/OPENFHEbinfhe
 benchmark/CMakeFiles/serialize-ckks.dir/all: third-party/google-benchmark/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/serialize-ckks.dir/build.make benchmark/CMakeFiles/serialize-ckks.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/serialize-ckks.dir/build.make benchmark/CMakeFiles/serialize-ckks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=92 "Built target serialize-ckks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target serialize-ckks"
 .PHONY : benchmark/CMakeFiles/serialize-ckks.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/serialize-ckks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/serialize-ckks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/serialize-ckks.dir/rule
@@ -3173,7 +3204,7 @@ benchmark/CMakeFiles/allbenchmark.dir/all: benchmark/CMakeFiles/serialize-ckks.d
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/allbenchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/allbenchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/allbenchmark.dir/rule
@@ -3194,12 +3225,12 @@ benchmark/CMakeFiles/allbenchmark.dir/clean:
 benchmark/CMakeFiles/benchmarkinfo.dir/all:
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/benchmarkinfo.dir/build.make benchmark/CMakeFiles/benchmarkinfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmark/CMakeFiles/benchmarkinfo.dir/build.make benchmark/CMakeFiles/benchmarkinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=12 "Built target benchmarkinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num= "Built target benchmarkinfo"
 .PHONY : benchmark/CMakeFiles/benchmarkinfo.dir/all
 
 # Build rule for subdir invocation for target.
 benchmark/CMakeFiles/benchmarkinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark/CMakeFiles/benchmarkinfo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles 0
 .PHONY : benchmark/CMakeFiles/benchmarkinfo.dir/rule

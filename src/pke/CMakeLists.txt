@@ -96,7 +96,10 @@ if (BUILD_EXTRAS)
 	file (GLOB PKE_EXTRAS_SRC_FILES CONFIGURE_DEPENDS extras/*.cpp)
 	foreach (app ${PKE_EXTRAS_SRC_FILES})
 		get_filename_component ( exe ${app} NAME_WE )
-		add_executable (${exe} ${app} )
+		add_executable (${exe} ${app}
+                include/scheme/slaprns/cryptocontextparams-slaprns.h
+                include/scheme/slaprns/slaprns-cryptoparameters.h
+                include/scheme/slaprns/cryptocontextparams-slaprns.h)
 		set_property(TARGET ${exe} PROPERTY RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/extras/pke)
 		set( PKEEXTRAS ${PKEEXTRAS} ${exe} )
 		target_link_libraries ( ${exe} ${PKELIBS} )

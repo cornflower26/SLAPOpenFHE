@@ -47,6 +47,7 @@ enum SCHEME {
     CKKSRNS_SCHEME,
     BFVRNS_SCHEME,
     BGVRNS_SCHEME,
+    SLAPRNS_SCHEME,
 };
 //====================================================================================================================
 SCHEME convertToSCHEME(const std::string& str);
@@ -61,6 +62,9 @@ inline bool isBFVRNS(SCHEME schemeId) {
 }
 inline bool isBGVRNS(SCHEME schemeId) {
     return (schemeId == BGVRNS_SCHEME);
+}
+inline bool isSLAP(SCHEME schemeId) {
+    return (schemeId = SLAPRNS_SCHEME);
 }
 
 }  // namespace lbcrypto

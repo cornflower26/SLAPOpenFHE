@@ -70,7 +70,7 @@ src/pke/CMakeFiles/pkeinfo: src/pke/pkeinfocmd
 
 src/pke/pkeinfocmd:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating pkeinfocmd"
-	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && echo Builds OPENFHEpke and these apps: advanced-ckks-bootstrapping advanced-real-numbers-128 advanced-real-numbers ckks-noise-flooding depth-bfvrns-behz depth-bfvrns depth-bgvrns function-evaluation inner-product iterative-ckks-bootstrapping linearwsum-evaluation polynomial-evaluation pre-buffer rotation scheme-switching simple-ckks-bootstrapping simple-integers-bgvrns simple-integers-serial-bgvrns simple-integers-serial simple-integers simple-real-numbers-serial simple-real-numbers tckks-interactive-mp-bootstrapping-Chebyshev tckks-interactive-mp-bootstrapping threshold-fhe-5p threshold-fhe
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && echo Builds OPENFHEpke and these apps: advanced-ckks-bootstrapping advanced-real-numbers-128 advanced-real-numbers ckks-noise-flooding depth-bfvrns-behz depth-bfvrns depth-bgvrns function-evaluation inner-product iterative-ckks-bootstrapping linearwsum-evaluation polynomial-evaluation pre-buffer rotation scheme-switching simple-ckks-bootstrapping simple-integers-bgvrns simple-integers-serial-bgvrns simple-integers-serial simple-integers simple-real-numbers-serial simple-real-numbers simple-slap-example tckks-interactive-mp-bootstrapping-Chebyshev tckks-interactive-mp-bootstrapping threshold-fhe-5p threshold-fhe
 
 pkeinfo: src/pke/CMakeFiles/pkeinfo
 pkeinfo: src/pke/pkeinfocmd

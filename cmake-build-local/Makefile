@@ -748,6 +748,19 @@ simple-real-numbers/fast:
 .PHONY : simple-real-numbers/fast
 
 #=============================================================================
+# Target rules for targets named simple-slap-example
+
+# Build rule for target.
+simple-slap-example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple-slap-example
+.PHONY : simple-slap-example
+
+# fast build rule for target.
+simple-slap-example/fast:
+	$(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/simple-slap-example.dir/build.make src/pke/CMakeFiles/simple-slap-example.dir/build
+.PHONY : simple-slap-example/fast
+
+#=============================================================================
 # Target rules for targets named tckks-interactive-mp-bootstrapping-Chebyshev
 
 # Build rule for target.
@@ -1598,6 +1611,7 @@ help:
 	@echo "... simple-integers-serial-bgvrns"
 	@echo "... simple-real-numbers"
 	@echo "... simple-real-numbers-serial"
+	@echo "... simple-slap-example"
 	@echo "... tckks-interactive-mp-bootstrapping"
 	@echo "... tckks-interactive-mp-bootstrapping-Chebyshev"
 	@echo "... threshold-fhe"

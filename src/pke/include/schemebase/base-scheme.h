@@ -171,6 +171,14 @@ public:
                                              mPIntBootCiphertextCompressionLevel);
     }
 
+    virtual bool ParamsGenSLAPRNS(std::shared_ptr<CryptoParametersBase<Element>> cryptoParams, usint plainBits, usint packingSize,
+                                  usint numUsers, usint setIters, usint kPrime, SLAPScheme scheme1) const {
+        if (!m_ParamsGen)
+            OPENFHE_THROW(config_error, "m_ParamsGen is nullptr");
+        return m_ParamsGen->ParamsGenSLAPRNS(cryptoParams, plainBits, packingSize,
+                                             numUsers, setIters, kPrime, scheme1);
+    }
+
     virtual bool ParamsGenBGVRNS(std::shared_ptr<CryptoParametersBase<DCRTPoly>> cryptoParams, uint32_t evalAddCount,
                                  uint32_t keySwitchCount, usint cyclOrder, usint numPrimes, usint firstModSize,
                                  usint dcrtBits, uint32_t numPartQ, usint multihopQBound) const {
@@ -199,6 +207,17 @@ public:
         return m_PKE->Encrypt(plaintext, privateKey);
     }
 
+    virtual Ciphertext<Element> Encrypt(const Element& plaintext, const PublicKey<Element> publicKey,
+                                        const PrivateKey<Element> privateKey) const {
+        VerifyPKEEnabled(__func__);
+        //      if (!plaintext)
+        //        OPENFHE_THROW(config_error, "Input plaintext is nullptr");
+        if (!privateKey)
+            OPENFHE_THROW(config_error, "Input private key is nullptr");
+
+        return m_PKE->Encrypt(plaintext, privateKey, publicKey);
+    }
+
     virtual Ciphertext<Element> Encrypt(const Element& plaintext, const PublicKey<Element> publicKey) const {
         VerifyPKEEnabled(__func__);
         //      if (!plaintext)
@@ -217,6 +236,16 @@ public:
         if (!privateKey)
             OPENFHE_THROW(config_error, "Input private key is nullptr");
         return m_PKE->Decrypt(ciphertext, privateKey, plaintext);
+    }
+
+    virtual DecryptResult Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,
+                                  const PublicKey<Element> publicKey, Poly* plaintext) const {
+        VerifyPKEEnabled(__func__);
+        if (!ciphertext)
+            OPENFHE_THROW(config_error, "Input ciphertext is nullptr");
+        if (!privateKey)
+            OPENFHE_THROW(config_error, "Input private key is nullptr");
+        return m_PKE->Decrypt(ciphertext, privateKey, publicKey, plaintext);
     }
 
     virtual DecryptResult Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,

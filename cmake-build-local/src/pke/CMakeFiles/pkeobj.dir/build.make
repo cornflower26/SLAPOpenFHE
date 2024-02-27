@@ -657,10 +657,52 @@ src/pke/CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.s"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/scheme-id-impl.cpp -o CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.s
 
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-cryptoparameters.cpp
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o -MF CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-cryptoparameters.cpp
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.i"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-cryptoparameters.cpp > CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.i
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.s"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-cryptoparameters.cpp -o CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.s
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-parametergeneration.cpp
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o -MF CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-parametergeneration.cpp
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.i"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-parametergeneration.cpp > CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.i
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.s"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-parametergeneration.cpp -o CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.s
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-pke.cpp
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o -MF CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-pke.cpp
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.i"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-pke.cpp > CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.i
+
+src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.s"
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/scheme/slap/slaprns-pke.cpp -o CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.s
+
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-advancedshe.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-advancedshe.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.i: cmake_force
@@ -674,7 +716,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-cryptoparameters.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-cryptoparameters.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.i: cmake_force
@@ -688,7 +730,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.s: cmake_
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-fhe.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-fhe.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.i: cmake_force
@@ -702,7 +744,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-leveledshe.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-leveledshe.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.i: cmake_force
@@ -716,7 +758,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-leveledshe.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-multiparty.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-multiparty.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.i: cmake_force
@@ -730,7 +772,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-multiparty.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-parametergeneration.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-parametergeneration.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.i: cmake_force
@@ -744,7 +786,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-parametergeneration.cpp.s: cma
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-pke.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-pke.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.i: cmake_force
@@ -758,7 +800,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pke.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-pre.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-pre.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.i: cmake_force
@@ -772,7 +814,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-pre.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-scheme.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/base-scheme.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.i: cmake_force
@@ -786,7 +828,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-scheme.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/rlwe-cryptoparameters-impl.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemebase/rlwe-cryptoparameters-impl.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.i: cmake_force
@@ -800,7 +842,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/rlwe-cryptoparameters-impl.cpp.s: c
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-cryptoparameters.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-cryptoparameters.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.i: cmake_force
@@ -814,7 +856,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-cryptoparameters.cpp.s: cmake_fo
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-leveledshe.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-leveledshe.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.i: cmake_force
@@ -828,7 +870,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-leveledshe.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-multiparty.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-multiparty.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.i: cmake_force
@@ -842,7 +884,7 @@ src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-multiparty.cpp.s: cmake_force
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o: src/pke/CMakeFiles/pkeobj.dir/flags.make
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-pke.cpp
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o: src/pke/CMakeFiles/pkeobj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o"
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local/src/pke && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o -MF CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o.d -o CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.o -c /Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/pke/lib/schemerns/rns-pke.cpp
 
 src/pke/CMakeFiles/pkeobj.dir/lib/schemerns/rns-pke.cpp.i: cmake_force
@@ -895,6 +937,9 @@ pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/ckksrns/ckksrns-schemeswitching
 pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/ckksrns/ckksrns-utils.cpp.o
 pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/cryptocontextparams-base-impl.cpp.o
 pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.o
+pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o
+pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-parametergeneration.cpp.o
+pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.o
 pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-advancedshe.cpp.o
 pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-cryptoparameters.cpp.o
 pkeobj: src/pke/CMakeFiles/pkeobj.dir/lib/schemebase/base-fhe.cpp.o

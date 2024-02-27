@@ -1219,6 +1219,45 @@ public:
     Ciphertext<Element> Encrypt(const PrivateKey<Element> privateKey, Plaintext plaintext) const {
         return Encrypt(plaintext, privateKey);
     }
+    
+    /**
+   * Encrypt a plaintext using a given public key
+   * @param publicKey public key
+   * @param privateKey private key
+   * @param plaintext plaintext
+   * @return ciphertext (or null on failure)
+   */
+    Ciphertext<Element> Encrypt(const PublicKey<Element> publicKey, const PrivateKey<Element> privateKey, Plaintext plaintext) const {
+        return Encrypt(plaintext, publicKey, privateKey);
+    }
+    
+    /**
+   * Encrypt a plaintext using a given private key
+   * @param plaintext input plaintext
+   * @param privateKey private key
+   * @param publicKey public key
+   * @return ciphertext (or null on failure)
+   */
+    Ciphertext<Element> Encrypt(const Plaintext& plaintext, const PublicKey<Element> publicKey,
+                                const PrivateKey<Element> privateKey) const {
+        //    if (plaintext == nullptr)
+        //      OPENFHE_THROW(type_error, "Input plaintext is nullptr");
+        CheckKey(privateKey);
+        CheckKey(publicKey);
+        
+        Ciphertext<Element> ciphertext = GetScheme()->Encrypt(plaintext->GetElement<Element>(), publicKey, privateKey);
+
+        if (ciphertext) {
+            ciphertext->SetEncodingType(plaintext->GetEncodingType());
+            ciphertext->SetScalingFactor(plaintext->GetScalingFactor());
+            ciphertext->SetScalingFactorInt(plaintext->GetScalingFactorInt());
+            ciphertext->SetNoiseScaleDeg(plaintext->GetNoiseScaleDeg());
+            ciphertext->SetLevel(plaintext->GetLevel());
+            ciphertext->SetSlots(plaintext->GetSlots());
+        }
+
+        return ciphertext;
+    }
 
     /**
    * Decrypt a single ciphertext into the appropriate plaintext
@@ -1230,6 +1269,8 @@ public:
    */
     DecryptResult Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,
                           Plaintext* plaintext);
+    DecryptResult Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,
+                          const PublicKey<Element> publicKey, Plaintext* plaintext);
 
     /**
    * Decrypt a single ciphertext into the appropriate plaintext
@@ -1242,6 +1283,11 @@ public:
     inline DecryptResult Decrypt(const PrivateKey<Element> privateKey, ConstCiphertext<Element> ciphertext,
                                  Plaintext* plaintext) {
         return Decrypt(ciphertext, privateKey, plaintext);
+    }
+
+    inline DecryptResult Decrypt(const PrivateKey<Element> privateKey, const PublicKey<Element> publicKey,
+                                 ConstCiphertext<Element> ciphertext, Plaintext* plaintext) {
+        return Decrypt(ciphertext, privateKey, publicKey, plaintext);
     }
 
     //------------------------------------------------------------------------------

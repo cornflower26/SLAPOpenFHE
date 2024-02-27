@@ -458,6 +458,33 @@ DecryptResult CryptoContextImpl<Element>::Decrypt(ConstCiphertext<Element> ciphe
     return result;
 }
 
+template <typename Element>
+DecryptResult CryptoContextImpl<Element>::Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,
+                                                  const PublicKey<Element> publicKey, Plaintext* plaintext) {
+    if (ciphertext == nullptr)
+        OPENFHE_THROW(config_error, "ciphertext passed to Decrypt is empty");
+    if (plaintext == nullptr)
+        OPENFHE_THROW(config_error, "plaintext passed to Decrypt is empty");
+    if (privateKey == nullptr || Mismatched(privateKey->GetCryptoContext()))
+        OPENFHE_THROW(config_error,
+                      "Information passed to Decrypt was not generated with "
+                      "this crypto context");
+
+    Plaintext decrypted = GetPlaintextForDecrypt(ciphertext->GetEncodingType(),
+                                                 ciphertext->GetElements()[0].GetParams(), this->GetEncodingParams());
+
+    DecryptResult result;
+    result = GetScheme()->Decrypt(ciphertext, privateKey, publicKey, &decrypted->GetElement<Poly>());
+
+    if (result.isValid == false)  // TODO (dsuponit): why don't we throw an exception here?
+        return result;
+
+    decrypted->SetScalingFactorInt(result.scalingFactorInt);
+    decrypted->Decode();
+    *plaintext = std::move(decrypted);
+    return result;
+}
+
 //------------------------------------------------------------------------------
 // Advanced SHE CHEBYSHEV SERIES EXAMPLES
 //------------------------------------------------------------------------------

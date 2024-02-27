@@ -34,7 +34,7 @@ set (OpenFHE_EXE_LINKER_FLAGS " ")
 # CXX info
 set(OpenFHE_CXX_STANDARD "17")
 set(OpenFHE_CXX_COMPILER_ID "AppleClang")
-set(OpenFHE_CXX_COMPILER_VERSION "15.0.0.15000040")
+set(OpenFHE_CXX_COMPILER_VERSION "15.0.0.15000100")
 
 # Build Options
 set(OpenFHE_STATIC "OFF")

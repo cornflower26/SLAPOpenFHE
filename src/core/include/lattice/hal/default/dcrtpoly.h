@@ -230,6 +230,7 @@ public:
     PolyType ToNativePoly() const override;
     PolyLargeType CRTInterpolateIndex(usint i) const override;
     Integer GetWorkingModulus() const override;
+    DCRTPolyType AddRandomNoise(const Integer& modulus) const;
 
     void SetValuesModSwitch(const DCRTPolyType& element, const NativeInteger& modulus) override;
 

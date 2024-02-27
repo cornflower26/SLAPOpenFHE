@@ -102,6 +102,9 @@ public:
    */
     virtual Ciphertext<Element> Encrypt(Element plaintext, const PublicKey<Element> publicKey) const;
 
+
+    virtual Ciphertext<Element> Encrypt(Element plaintext, const PrivateKey<Element> privateKey,
+                                        const PublicKey<Element> publicKey) const;
     /**
    * Method for decrypting plaintext using LBC
    *
@@ -127,6 +130,9 @@ public:
                                   Poly* plaintext) const {
         OPENFHE_THROW(config_error, "Decryption to Poly is not supported");
     }
+
+    virtual DecryptResult Decrypt(ConstCiphertext<Element> ciphertext, const PrivateKey<Element> privateKey,
+                                  const PublicKey<Element> publicKey, Poly* plaintext) const;
 
     /////////////////////////////////////////
     // CORE OPERATIONS

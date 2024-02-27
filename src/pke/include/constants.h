@@ -56,6 +56,12 @@ enum PKESchemeFeature {
 };
 std::ostream& operator<<(std::ostream& s, PKESchemeFeature f);
 
+enum SLAPScheme {
+    NS = 0,
+    MS,
+};
+std::ostream& operator<<(std::ostream& s, SLAPScheme f);
+
 enum ScalingTechnique {
     FIXEDMANUAL = 0,
     FIXEDAUTO,

@@ -95,6 +95,23 @@ public:
 
     /**
    * Method for computing all derived parameters based on chosen primitive
+   * parameters.
+   *
+   * @param cryptoParams the crypto parameters object to be populated with parameters.
+   * @param cyclOrder the cyclotomic order.
+   * @param numPrimes number of modulus towers to support.
+   * @param scalingModSize the bit-width for plaintexts and DCRTPoly's.
+   * @param firstModSize the bit-size of the first modulus
+   * @param numPartQ number of partitions of Q for HYBRID key switching
+   *
+   */
+    bool ParamsGenSLAPRNS(std::shared_ptr<CryptoParametersBase<DCRTPoly>> cryptoParams, usint plainBits, usint packingSize,
+                          usint numUsers, usint setIters, usint kPrime, SLAPScheme scheme1) const override {
+        OPENFHE_THROW(config_error, "This signature for ParamsGen is not supported for this scheme.");
+    }
+
+    /**
+   * Method for computing all derived parameters based on chosen primitive
    * parameters. This is intended for BGVrns
    * @param *cryptoParams the crypto parameters object to be populated with
    * parameters.
