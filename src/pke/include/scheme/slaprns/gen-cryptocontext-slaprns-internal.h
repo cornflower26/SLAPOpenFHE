@@ -76,7 +76,7 @@ typename ContextGeneratorType::ContextType genCryptoContextSLAPRNSInternal(
 
     auto cc = ContextGeneratorType::Factory::GetContext(params, scheme);
 
-
+    /**
     unsigned int q_bits = ctext_modulus_size(plain_bits, num_users, sc);
     ctext_parms = new Parameters(q_bits);
     ZZ q = ctext_parms->modulus();
@@ -119,6 +119,7 @@ typename ContextGeneratorType::ContextType genCryptoContextSLAPRNSInternal(
     //Transition data
     t_to_q = new Transition(*plain_parms, *ctext_parms);
     q_to_t = new Transition(*ctext_parms, *plain_parms);
+     **/
     cc->setSchemeId(SCHEME::SLAPRNS_SCHEME);
     return cc;
 }

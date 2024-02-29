@@ -617,7 +617,7 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-CORE_INCLUDE_DIRS:INTERNAL=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib
+CORE_INCLUDE_DIRS:INTERNAL=/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/include;/Users/antoniajanuszewicz/Downloads/openfhe-development-main/src/core/lib
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/local/bin/git][v2.10.1()]
 //Details about finding OpenMP

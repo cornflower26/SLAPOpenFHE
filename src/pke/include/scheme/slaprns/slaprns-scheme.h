@@ -2,14 +2,15 @@
 // Created by Antonia Januszewicz on 1/24/24.
 //
 
-#ifndef OPENFHE_SLAPRNS_SCHEME_H
-#define OPENFHE_SLAPRNS_SCHEME_H
+#ifndef LBCRYPTO_CRYPTO_SLAPRNS_SCHEME_H
+#define LBCRYPTO_CRYPTO_SLAPRNS_SCHEME_H
 
 #include "schemerns/rns-scheme.h"
 
+#include "scheme/slaprns/slaprns-pke.h"
 #include "scheme/slaprns/slaprns-cryptoparameters.h"
 #include "scheme/slaprns/slaprns-parametergeneration.h"
-#include "scheme/slaprns/slaprns-pke.h"
+#include "scheme/slaprns/slaprns-leveledshe.h"
 
 #include <string>
 #include <memory>
@@ -32,7 +33,7 @@ public:
         return dynamic_cast<const SchemeSLAPRNS*>(&sch) != nullptr;
     }
 
-    void Enable(PKESchemeFeature feature) override {};
+    void Enable(PKESchemeFeature feature) override;
 
     /////////////////////////////////////
     // SERIALIZATION

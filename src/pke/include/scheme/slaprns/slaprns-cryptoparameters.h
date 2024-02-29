@@ -2,8 +2,8 @@
 // Created by Antonia Januszewicz on 1/17/24.
 //
 
-#ifndef OPENFHE_SLAPRNS_CRYPTOPARAMETERS_H
-#define OPENFHE_SLAPRNS_CRYPTOPARAMETERS_H
+#ifndef LBCRYPTO_CRYPTO_SLAPRNS_CRYPTOPARAMETERS_H
+#define LBCRYPTO_CRYPTO_SLAPRNS_CRYPTOPARAMETERS_H
 #include "schemerns/rns-cryptoparameters.h"
 
 #include <memory>

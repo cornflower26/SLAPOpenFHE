@@ -6,8 +6,8 @@
   Parameter class to generate SLAPRNS crypto context
  */
 
-#ifndef OPENFHE_CRYPTOCONTEXTPARAMS_SLAPRNS_H
-#define OPENFHE_CRYPTOCONTEXTPARAMS_SLAPRNS_H
+#ifndef LBCRYPTO_CRYPTO_CRYPTOCONTEXTPARAMS_SLAPRNS_H
+#define LBCRYPTO_CRYPTO_CRYPTOCONTEXTPARAMS_SLAPRNS_H
 
 #include "scheme/cryptocontextparams-base.h"
 

@@ -2,8 +2,8 @@
 // Created by Antonia Januszewicz on 2/28/24.
 //
 
-#ifndef OPENFHE_SLAPRNS_LEVELEDSHE_H
-#define OPENFHE_SLAPRNS_LEVELEDSHE_H
+#ifndef LBCRYPTO_CRYPTO_SLAPRNS_LEVELEDSHE_H
+#define LBCRYPTO_CRYPTO_SLAPRNS_LEVELEDSHE_H
 
     #include "schemerns/rns-leveledshe.h"
 

@@ -47,6 +47,8 @@ SCHEME convertToSCHEME(const std::string& str) {
         return BFVRNS_SCHEME;
     else if (str == "BGVRNS_SCHEME")
         return BGVRNS_SCHEME;
+    else if (str == "SLAPRNS_SCHEME")
+        return SLAPRNS_SCHEME;
 
     std::string errMsg(std::string("Unknown schemeId ") + str);
     OPENFHE_THROW(config_error, errMsg);
@@ -62,6 +64,9 @@ std::ostream& operator<<(std::ostream& os, SCHEME schemeId) {
             break;
         case BGVRNS_SCHEME:
             os << "BGVRNS";
+            break;
+        case SLAPRNS_SCHEME:
+            os << "SLAPRNS";
             break;
         default:
             std::string errMsg(std::string("Unknown schemeId ") + std::to_string(schemeId));

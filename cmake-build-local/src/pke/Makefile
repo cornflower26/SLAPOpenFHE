@@ -2318,29 +2318,53 @@ lib/scheme/scheme-id-impl.cpp.s:
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/scheme-id-impl.cpp.s
 .PHONY : lib/scheme/scheme-id-impl.cpp.s
 
-lib/scheme/slap/slaprns-cryptoparameters.o: lib/scheme/slap/slaprns-cryptoparameters.cpp.o
-.PHONY : lib/scheme/slap/slaprns-cryptoparameters.o
+lib/scheme/slap/cryptocontextparams-slaprns.o: lib/scheme/slap/cryptocontextparams-slaprns.cpp.o
+.PHONY : lib/scheme/slap/cryptocontextparams-slaprns.o
 
 # target to build an object file
-lib/scheme/slap/slaprns-cryptoparameters.cpp.o:
-	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.o
-.PHONY : lib/scheme/slap/slaprns-cryptoparameters.cpp.o
+lib/scheme/slap/cryptocontextparams-slaprns.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/cryptocontextparams-slaprns.cpp.o
+.PHONY : lib/scheme/slap/cryptocontextparams-slaprns.cpp.o
 
-lib/scheme/slap/slaprns-cryptoparameters.i: lib/scheme/slap/slaprns-cryptoparameters.cpp.i
-.PHONY : lib/scheme/slap/slaprns-cryptoparameters.i
+lib/scheme/slap/cryptocontextparams-slaprns.i: lib/scheme/slap/cryptocontextparams-slaprns.cpp.i
+.PHONY : lib/scheme/slap/cryptocontextparams-slaprns.i
 
 # target to preprocess a source file
-lib/scheme/slap/slaprns-cryptoparameters.cpp.i:
-	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.i
-.PHONY : lib/scheme/slap/slaprns-cryptoparameters.cpp.i
+lib/scheme/slap/cryptocontextparams-slaprns.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/cryptocontextparams-slaprns.cpp.i
+.PHONY : lib/scheme/slap/cryptocontextparams-slaprns.cpp.i
 
-lib/scheme/slap/slaprns-cryptoparameters.s: lib/scheme/slap/slaprns-cryptoparameters.cpp.s
-.PHONY : lib/scheme/slap/slaprns-cryptoparameters.s
+lib/scheme/slap/cryptocontextparams-slaprns.s: lib/scheme/slap/cryptocontextparams-slaprns.cpp.s
+.PHONY : lib/scheme/slap/cryptocontextparams-slaprns.s
 
 # target to generate assembly for a file
-lib/scheme/slap/slaprns-cryptoparameters.cpp.s:
-	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-cryptoparameters.cpp.s
-.PHONY : lib/scheme/slap/slaprns-cryptoparameters.cpp.s
+lib/scheme/slap/cryptocontextparams-slaprns.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/cryptocontextparams-slaprns.cpp.s
+.PHONY : lib/scheme/slap/cryptocontextparams-slaprns.cpp.s
+
+lib/scheme/slap/slaprns-leveledshe.o: lib/scheme/slap/slaprns-leveledshe.cpp.o
+.PHONY : lib/scheme/slap/slaprns-leveledshe.o
+
+# target to build an object file
+lib/scheme/slap/slaprns-leveledshe.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-leveledshe.cpp.o
+.PHONY : lib/scheme/slap/slaprns-leveledshe.cpp.o
+
+lib/scheme/slap/slaprns-leveledshe.i: lib/scheme/slap/slaprns-leveledshe.cpp.i
+.PHONY : lib/scheme/slap/slaprns-leveledshe.i
+
+# target to preprocess a source file
+lib/scheme/slap/slaprns-leveledshe.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-leveledshe.cpp.i
+.PHONY : lib/scheme/slap/slaprns-leveledshe.cpp.i
+
+lib/scheme/slap/slaprns-leveledshe.s: lib/scheme/slap/slaprns-leveledshe.cpp.s
+.PHONY : lib/scheme/slap/slaprns-leveledshe.s
+
+# target to generate assembly for a file
+lib/scheme/slap/slaprns-leveledshe.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-leveledshe.cpp.s
+.PHONY : lib/scheme/slap/slaprns-leveledshe.cpp.s
 
 lib/scheme/slap/slaprns-parametergeneration.o: lib/scheme/slap/slaprns-parametergeneration.cpp.o
 .PHONY : lib/scheme/slap/slaprns-parametergeneration.o
@@ -2389,6 +2413,30 @@ lib/scheme/slap/slaprns-pke.s: lib/scheme/slap/slaprns-pke.cpp.s
 lib/scheme/slap/slaprns-pke.cpp.s:
 	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-pke.cpp.s
 .PHONY : lib/scheme/slap/slaprns-pke.cpp.s
+
+lib/scheme/slap/slaprns-scheme.o: lib/scheme/slap/slaprns-scheme.cpp.o
+.PHONY : lib/scheme/slap/slaprns-scheme.o
+
+# target to build an object file
+lib/scheme/slap/slaprns-scheme.cpp.o:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-scheme.cpp.o
+.PHONY : lib/scheme/slap/slaprns-scheme.cpp.o
+
+lib/scheme/slap/slaprns-scheme.i: lib/scheme/slap/slaprns-scheme.cpp.i
+.PHONY : lib/scheme/slap/slaprns-scheme.i
+
+# target to preprocess a source file
+lib/scheme/slap/slaprns-scheme.cpp.i:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-scheme.cpp.i
+.PHONY : lib/scheme/slap/slaprns-scheme.cpp.i
+
+lib/scheme/slap/slaprns-scheme.s: lib/scheme/slap/slaprns-scheme.cpp.s
+.PHONY : lib/scheme/slap/slaprns-scheme.s
+
+# target to generate assembly for a file
+lib/scheme/slap/slaprns-scheme.cpp.s:
+	cd /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local && $(MAKE) $(MAKESILENT) -f src/pke/CMakeFiles/pkeobj.dir/build.make src/pke/CMakeFiles/pkeobj.dir/lib/scheme/slap/slaprns-scheme.cpp.s
+.PHONY : lib/scheme/slap/slaprns-scheme.cpp.s
 
 lib/schemebase/base-advancedshe.o: lib/schemebase/base-advancedshe.cpp.o
 .PHONY : lib/schemebase/base-advancedshe.o
@@ -3702,15 +3750,21 @@ help:
 	@echo "... lib/scheme/scheme-id-impl.o"
 	@echo "... lib/scheme/scheme-id-impl.i"
 	@echo "... lib/scheme/scheme-id-impl.s"
-	@echo "... lib/scheme/slap/slaprns-cryptoparameters.o"
-	@echo "... lib/scheme/slap/slaprns-cryptoparameters.i"
-	@echo "... lib/scheme/slap/slaprns-cryptoparameters.s"
+	@echo "... lib/scheme/slap/cryptocontextparams-slaprns.o"
+	@echo "... lib/scheme/slap/cryptocontextparams-slaprns.i"
+	@echo "... lib/scheme/slap/cryptocontextparams-slaprns.s"
+	@echo "... lib/scheme/slap/slaprns-leveledshe.o"
+	@echo "... lib/scheme/slap/slaprns-leveledshe.i"
+	@echo "... lib/scheme/slap/slaprns-leveledshe.s"
 	@echo "... lib/scheme/slap/slaprns-parametergeneration.o"
 	@echo "... lib/scheme/slap/slaprns-parametergeneration.i"
 	@echo "... lib/scheme/slap/slaprns-parametergeneration.s"
 	@echo "... lib/scheme/slap/slaprns-pke.o"
 	@echo "... lib/scheme/slap/slaprns-pke.i"
 	@echo "... lib/scheme/slap/slaprns-pke.s"
+	@echo "... lib/scheme/slap/slaprns-scheme.o"
+	@echo "... lib/scheme/slap/slaprns-scheme.i"
+	@echo "... lib/scheme/slap/slaprns-scheme.s"
 	@echo "... lib/schemebase/base-advancedshe.o"
 	@echo "... lib/schemebase/base-advancedshe.i"
 	@echo "... lib/schemebase/base-advancedshe.s"

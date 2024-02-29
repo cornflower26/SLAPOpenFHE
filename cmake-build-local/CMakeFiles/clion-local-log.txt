@@ -1,4 +1,16 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DHAVE_CXX_FLAG_STD_CXX11=ON -DHAVE_CXX_FLAG_WALL=ON -DHAVE_CXX_FLAG_STD_WEXTRA=ON -DHAVE_CXX_FLAG_WSHADOW=ON -DHAVE_CXX_FLAG_WERROR=ON -DHAVE_STD_REGEX=ON -DHAVE_GNU_POSIX_REGEX=ON -DHAVE_CXX_FLAG_STD_WEXTRA=ON -DHAVE_POSIX_REGEX=ON -DHAVE_STEADY_CLOCK=ON -S /Users/antoniajanuszewicz/Downloads/openfhe-development-main -B /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local
+-- The C compiler identification is AppleClang 15.0.0.15000100
+-- The CXX compiler identification is AppleClang 15.0.0.15000100
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Building in RelWithDebInfo mode
 -- BUILD_UNITTESTS:  ON
 -- BUILD_EXAMPLES:   ON
@@ -20,6 +32,16 @@
 -- USE_MACPORTS:     OFF
 ***** INSTALL IS AT /usr/local; to change, run cmake with -DCMAKE_INSTALL_PREFIX=/your/path
 -- Architecture is x86_64
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of __int128
+-- Check size of __int128 - done
+-- Check size of uint64_t
+-- Check size of uint64_t - done
 -- NATIVEINT is set to 64
 -- MATHBACKEND is set to 4
 -- MATHBACKEND set to 4. Setting WITH_BE4 to ON
@@ -28,10 +50,45 @@
 -- OPENMP_INCLUDES: /usr/local/opt/libomp/include
 -- OpenMP_CXX_FLAGS: -Xpreprocessor -fopenmp -lomp -Wno-unused-command-line-argument
 -- OpenMP_CXX_LIB_NAMES: libomp
+-- Found OpenMP_C: -Xpreprocessor -fopenmp -lomp -Wno-unused-command-line-argument  
+-- Found OpenMP_CXX: -Xpreprocessor -fopenmp -lomp -Wno-unused-command-line-argument  
+-- Found OpenMP: TRUE   
+-- Found Git: /usr/local/bin/git (found version "2.10.1") 
 -- Submodule update
 -- Failed to find LLVM FileCheck
 -- git version: v0.0.0-dirty normalized to 0.0.0
 -- Version: 1.5.4
--- Configuring done (1.5s)
+-- Performing Test HAVE_CXX_FLAG_WEXTRA
+-- Performing Test HAVE_CXX_FLAG_WEXTRA - Failed
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE
+-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE - Failed
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC - Failed
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS
+-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS - Failed
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32
+-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 - Failed
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING
+-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING - Failed
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS - Failed
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED
+-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED - Failed
+-- Performing Test HAVE_CXX_FLAG_WD654
+-- Performing Test HAVE_CXX_FLAG_WD654 - Failed
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY
+-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY - Failed
+-- Performing Test HAVE_CXX_FLAG_COVERAGE
+-- Performing Test HAVE_CXX_FLAG_COVERAGE - Failed
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE  
+-- Configuring done (9.8s)
 -- Generating done (0.3s)
 -- Build files have been written to: /Users/antoniajanuszewicz/Downloads/openfhe-development-main/cmake-build-local

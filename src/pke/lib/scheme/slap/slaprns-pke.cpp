@@ -26,7 +26,7 @@ DecryptResult MSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<D
         ret += cv[i];
     }
     //Now scale and reduce
-    *plaintext = scale_down(ret, cryptoParams);
+    //*plaintext = scale_down(ret, cryptoParams);
     return DecryptResult(plaintext->GetLength());
 }
 
@@ -42,7 +42,7 @@ DecryptResult NSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<D
     }
     //Now reduce to mod t
     // *plaintext = base_conv(plain_parms, *q_to_t);
-    *plaintext = ret.SwitchCRTBasis(cryptoParams, *q_to_t);
+    //*plaintext = ret.SwitchCRTBasis(cryptoParams, *q_to_t);
     return DecryptResult(plaintext->GetLength());
 }
 
@@ -64,14 +64,14 @@ Ciphertext<DCRTPoly> NSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> pr
     //e.error(this->dl);
     //e.zero();
     e.AddRandomNoise(5);
-    e *= t_mod_q; //Per-modulus scaling
+    //e *= t_mod_q; //Per-modulus scaling
     //Add in the error to make a RLWE term
     ret += e;
     //Raise x to base q
     //DCRTPoly x_raised = plaintext.base_conv(ctext_parms, *t_to_q);
-    DCRTPoly x_raised = plaintext.SwitchCRTBasis(cryptoParams,5);
+    //DCRTPoly x_raised = plaintext.SwitchCRTBasis(cryptoParams,5);
     //Now add the message
-    ret += x_raised;
+    //ret += x_raised;
 
     Ciphertext<DCRTPoly> retval = Ciphertext<DCRTPoly>();
     retval->SetElement(ret);
@@ -91,11 +91,11 @@ Ciphertext<DCRTPoly> MSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> pr
     //Add in the error to make a RLWE term
     ret += e;
     //Raise x to base q
-    DCRTPoly x_raised = x.base_conv(ctext_parms, *t_to_q);
+    //DCRTPoly x_raised = x.base_conv(ctext_parms, *t_to_q);
     //Scale x by delta
-    x_raised *= delta_mod_q;
+    //x_raised *= delta_mod_q;
     //Now add the message
-    ret += x_raised;
+    //ret += x_raised;
 
     Ciphertext<DCRTPoly> retval = Ciphertext<DCRTPoly>();
     retval->SetElement(ret);

@@ -2,8 +2,8 @@
 // Created by Antonia Januszewicz on 1/7/24.
 //
 
-#ifndef OPENFHE_SLAPRNS_PKE_H
-#define OPENFHE_SLAPRNS_PKE_H
+#ifndef LBCRYPTO_CRYPTO_SLAPRNS_PKE_H
+#define LBCRYPTO_CRYPTO_SLAPRNS_PKE_H
 
 #include "schemerns/rns-pke.h"
 

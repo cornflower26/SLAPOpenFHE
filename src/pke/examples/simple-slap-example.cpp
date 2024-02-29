@@ -27,13 +27,13 @@ int main() {
     parameters.setEpsilon(1.0f);
     parameters.setDelta(0.1f);
     parameters.setMaxCtexts(20);
-    parameters.setScheme1(NS);
 
     parameters.calculateParms();
 
     CryptoContext< DCRTPoly> cc = GenCryptoContext(parameters);
     // Enable the features that you wish to use
     cc->Enable(PKE);
+    cc->Enable(KEYSWITCH);
     cc->Enable(LEVELEDSHE);
 
     auto keys = cc->KeyGen();

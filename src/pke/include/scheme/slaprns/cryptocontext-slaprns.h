@@ -2,8 +2,8 @@
 // Created by Antonia Januszewicz on 1/24/24.
 //
 
-#ifndef OPENFHE_CRYPTOCONTEXT_SLAPRNS_H
-#define OPENFHE_CRYPTOCONTEXT_SLAPRNS_H
+#ifndef LBCRYPTO_CRYPTO_CRYPTOCONTEXT_SLAPRNS_H
+#define LBCRYPTO_CRYPTO_CRYPTOCONTEXT_SLAPRNS_H
 
 
 #include "lattice/lat-hal.h"
