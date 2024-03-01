@@ -35,6 +35,7 @@ int main() {
     cc->Enable(PKE);
     cc->Enable(KEYSWITCH);
     cc->Enable(LEVELEDSHE);
+    std::cout << "SLAP scheme is using ring dimension " << cc->GetRingDimension() << std::endl << std::endl;
 
     auto keys = cc->KeyGen();
 

@@ -10,6 +10,7 @@
 
 #include "scheme/slaprns/slaprns-leveledshe.h"
 #include "scheme/slaprns/slaprns-pke.h"
+#include "scheme/ckksrns/ckksrns-pke.h"
 
 namespace lbcrypto {
 
@@ -17,8 +18,8 @@ void SchemeSLAPRNS::Enable(PKESchemeFeature feature) {
     switch (feature) {
         case PKE:
             if (m_PKE == nullptr)
+                //m_PKE = std::make_shared<PKECKKSRNS>();
                 m_PKE = std::make_shared<PKESLAPRNS>();
-                //m_PKE = std::make_shared<PKESLAPRNS>();
             break;
         case KEYSWITCH:
             // m_KeySwitch must be initialized later by calling SetKeySwitchingTechnique() with the value of key switching technique from cryptoparams

@@ -26,7 +26,7 @@ DecryptResult MSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<D
         ret += cv[i];
     }
     //Now scale and reduce
-    //*plaintext = scale_down(ret, cryptoParams);
+    // *plaintext = scale_down(ret, cryptoParams);
     return DecryptResult(plaintext->GetLength());
 }
 
@@ -42,7 +42,7 @@ DecryptResult NSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<D
     }
     //Now reduce to mod t
     // *plaintext = base_conv(plain_parms, *q_to_t);
-    //*plaintext = ret.SwitchCRTBasis(cryptoParams, *q_to_t);
+    // *plaintext = ret.SwitchCRTBasis(cryptoParams, *q_to_t);
     return DecryptResult(plaintext->GetLength());
 }
 
@@ -55,6 +55,7 @@ DecryptResult Decrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCR
 
 Ciphertext<DCRTPoly> NSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
                                const PublicKey<DCRTPoly> publicKey){
+
     const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(plaintext.GetParams());
     //Multiply secret and public keys
     DCRTPoly ret = privateKey->GetPrivateElement()*publicKey->GetPublicElements().at(0);
