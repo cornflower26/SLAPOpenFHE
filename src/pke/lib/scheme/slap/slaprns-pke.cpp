@@ -10,14 +10,14 @@
 namespace lbcrypto {
 
 
-std::vector<DecryptResult> PolyDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
+std::vector<DecryptResult> PKESLAPRNS::PolyDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
                                        NativePoly* plaintext) {
     std::vector<DecryptResult> retval = std::vector<DecryptResult>();
     return retval;
 }
 
-DecryptResult MSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
-                        Poly* plaintext) {
+DecryptResult PKESLAPRNS::MSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
+                        Poly* plaintext) const {
     const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(ciphertext->GetCryptoParameters());
     const std::vector<DCRTPoly>& cv = ciphertext->GetElements();
     size_t num_ctexts = cv.size();
@@ -30,8 +30,8 @@ DecryptResult MSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<D
     return DecryptResult(plaintext->GetLength());
 }
 
-DecryptResult NSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
-                        const PublicKey<DCRTPoly> publicKey, Poly* plaintext) {
+DecryptResult PKESLAPRNS::NSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
+                        const PublicKey<DCRTPoly> publicKey, Poly* plaintext) const {
    const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(ciphertext->GetCryptoParameters());
    const std::vector<DCRTPoly>& cv = ciphertext->GetElements();
    size_t num_ctexts = cv.size();
@@ -46,15 +46,15 @@ DecryptResult NSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<D
     return DecryptResult(plaintext->GetLength());
 }
 
-DecryptResult Decrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
-                      const PublicKey<DCRTPoly> publicKey, Poly* plaintext) {
+DecryptResult PKESLAPRNS::Decrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
+                      const PublicKey<DCRTPoly> publicKey, Poly* plaintext) const {
     const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(ciphertext->GetCryptoParameters());
     return (cryptoParams->getScheme1() == NS) ? NSDecrypt(ciphertext, privateKey, publicKey, plaintext) :
                               MSDecrypt(ciphertext, privateKey, plaintext);
 }
 
-Ciphertext<DCRTPoly> NSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
-                               const PublicKey<DCRTPoly> publicKey){
+Ciphertext<DCRTPoly> PKESLAPRNS::NSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
+                               const PublicKey<DCRTPoly> publicKey) const{
 
     const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(plaintext.GetParams());
     //Multiply secret and public keys
@@ -80,8 +80,8 @@ Ciphertext<DCRTPoly> NSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> pr
 
 }
 
-Ciphertext<DCRTPoly> MSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
-                               const PublicKey<DCRTPoly> publicKey){
+Ciphertext<DCRTPoly> PKESLAPRNS::MSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
+                               const PublicKey<DCRTPoly> publicKey) const{
     //Multiply secret and public keys
     DCRTPoly ret = privateKey->GetPrivateElement()*publicKey->GetPublicElements().at(0);;
     //Get the error, and scale it by the plaintext modulus
@@ -103,10 +103,52 @@ Ciphertext<DCRTPoly> MSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> pr
     return retval;
 }
 
-Ciphertext<DCRTPoly> Encrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
-                             const PublicKey<DCRTPoly> publicKey) {
+Ciphertext<DCRTPoly> PKESLAPRNS::Encrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
+                             const PublicKey<DCRTPoly> publicKey) const {
     const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(plaintext.GetParams());
     return (cryptoParams->getScheme1() ==NS)? NSEncrypt(plaintext, privateKey, publicKey) : MSEncrypt(plaintext, privateKey, publicKey);
+}
+
+KeyPair<DCRTPoly> PKESLAPRNS::KeyGenInternal(CryptoContext<DCRTPoly> cc, bool makeSparse) {
+    KeyPair<DCRTPoly> keyPair(std::make_shared<PublicKeyImpl<DCRTPoly>>(cc),
+                              std::make_shared<PrivateKeyImpl<DCRTPoly>>(cc));
+
+    const auto cryptoParams = std::dynamic_pointer_cast<CryptoParametersSLAPRNS>(cc->GetCryptoParameters());
+
+    std::shared_ptr<ParmType> elementParams = cryptoParams->GetElementParams();
+    if (cryptoParams->GetEncryptionTechnique() == EXTENDED) {
+        elementParams = cryptoParams->GetParamsQr();
+    }
+    const std::shared_ptr<ParmType> paramsPK = cryptoParams->GetParamsPK();
+
+    const auto ns      = cryptoParams->GetNoiseScale();
+    const DggType& dgg = cryptoParams->GetDiscreteGaussianGenerator();
+    DugType dug;
+    TugType tug;
+
+    // Private Key Generation
+
+    DCRTPoly s;
+    s.SetValuesToZero();
+    for (unsigned int i = 0; i < cryptoParams->getNumUsers();i++){
+        s -= DCRTPoly(dgg, paramsPK, Format::EVALUATION);
+    }
+
+    // Public Key Generation
+
+    DCRTPoly p(dgg, paramsPK, Format::EVALUATION);
+
+    // usint sizeQ  = elementParams->GetParams().size();
+    // usint sizePK = paramsPK->GetParams().size();
+    // if (sizePK > sizeQ) {
+    //    s.DropLastElements(sizePK - sizeQ);
+    // }
+
+    keyPair.secretKey->SetPrivateElement(std::move(s));
+    keyPair.publicKey->SetPublicElementAtIndex(0, std::move(p));
+    keyPair.publicKey->SetKeyTag(keyPair.secretKey->GetKeyTag());
+
+    return keyPair;
 }
 
 }

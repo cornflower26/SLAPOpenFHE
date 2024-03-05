@@ -35,42 +35,30 @@ public:
    */
 
     DecryptResult Decrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
-                          const PublicKey<DCRTPoly> publicKey, Poly* plaintext) const override{
-        return DecryptResult();
-    }
+                          const PublicKey<DCRTPoly> publicKey, Poly* plaintext) const override;
 
 
     std::vector<DecryptResult> PolyDecrypt(ConstCiphertext<DCRTPoly> ciphertext,
                                            const PrivateKey<DCRTPoly> privateKey,
-                                           NativePoly* plaintext) {
-        return std::vector<DecryptResult>();
-    }
+                                           NativePoly* plaintext);
 
 
     DecryptResult MSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
-                          NativePoly* plaintext){
-        return DecryptResult();
-    }
+                          Poly* plaintext) const;
 
     DecryptResult NSDecrypt(ConstCiphertext<DCRTPoly> ciphertext, const PrivateKey<DCRTPoly> privateKey,
-                            const PublicKey<DCRTPoly> publicKey, NativePoly* plaintext){
-        return DecryptResult();
-    }
+                            const PublicKey<DCRTPoly> publicKey, Poly* plaintext) const;
 
     Ciphertext<DCRTPoly> Encrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
-                                        const PublicKey<DCRTPoly> publicKey) const override{
-        return Ciphertext<DCRTPoly>();
-    }
+                                        const PublicKey<DCRTPoly> publicKey) const override;
 
     Ciphertext<DCRTPoly> NSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
-                                 const PublicKey<DCRTPoly> publicKey){
-        return Ciphertext<DCRTPoly>();
-    }
+                                 const PublicKey<DCRTPoly> publicKey) const;
 
     Ciphertext<DCRTPoly> MSEncrypt(DCRTPoly plaintext, const PrivateKey<DCRTPoly> privateKey,
-                                 const PublicKey<DCRTPoly> publicKey){
-        return Ciphertext<DCRTPoly>();
-    }
+                                 const PublicKey<DCRTPoly> publicKey) const;
+
+    KeyPair<DCRTPoly> KeyGenInternal(CryptoContext<DCRTPoly> cc, bool makeSparse) override;
 
     /**
    * Method for decrypting plaintext with noise flooding

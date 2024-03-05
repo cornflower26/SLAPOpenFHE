@@ -23,6 +23,8 @@ public:
     bool ParamsGenSLAPRNS(std::shared_ptr<CryptoParametersBase<DCRTPoly>> cryptoParams, usint plainBits, usint packingSize,
                           usint numUsers, usint setIters, usint kPrime, SLAPScheme scheme1) const override;
 
+    uint32_t ctext_modulus_size(const uint32_t log_t, const size_t num_users, const SLAPScheme s);
+
     /////////////////////////////////////
     // SERIALIZATION
     /////////////////////////////////////
