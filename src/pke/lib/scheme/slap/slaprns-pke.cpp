@@ -129,9 +129,14 @@ KeyPair<DCRTPoly> PKESLAPRNS::KeyGenInternal(CryptoContext<DCRTPoly> cc, bool ma
     // Private Key Generation
 
     DCRTPoly s;
+    DCRTPoly temp;
+    std::vector<DCRTPoly> temps;
+    temp.SetValuesToZero();
     s.SetValuesToZero();
     for (unsigned int i = 0; i < cryptoParams->getNumUsers();i++){
-        s -= DCRTPoly(dgg, paramsPK, Format::EVALUATION);
+        temp = DCRTPoly(dgg, paramsPK, Format::EVALUATION);
+        temps.push_back(temp);
+        s -= temp;
     }
 
     // Public Key Generation
@@ -145,7 +150,8 @@ KeyPair<DCRTPoly> PKESLAPRNS::KeyGenInternal(CryptoContext<DCRTPoly> cc, bool ma
     // }
 
     keyPair.secretKey->SetPrivateElement(std::move(s));
-    keyPair.publicKey->SetPublicElementAtIndex(0, std::move(p));
+    keyPair.publicKey->SetPublicElements(temps);
+    //keyPair.publicKey->SetPublicElementAtIndex(0, std::move(p));
     keyPair.publicKey->SetKeyTag(keyPair.secretKey->GetKeyTag());
 
     return keyPair;

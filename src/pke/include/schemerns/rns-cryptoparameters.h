@@ -570,6 +570,116 @@ public:
     }
 
     /////////////////////////////////////
+    // SLAPrns Scaling Factor
+    /////////////////////////////////////
+
+    void CalculateSlapAggregatorTransitions(uint64_t k, BigInteger q, BigInteger t) {
+        m_delta_mod_q.reserve(k);
+        m_t_mod_q.reserve(k);
+        BigInteger tmp;
+        BigInteger delta = q/t;
+        BigInteger tmp_mod;
+
+        //Fill delta mod q for later scaling
+        for(size_t i = 0; i < k; i++){
+            BigInteger qi = ctext_parms->moduli(i);
+            uint64_t tmp_delta, tmp_t;
+            //TODO fix - don't write directly to array
+            //tmp_mod = NTL::ZZFromBytes((const unsigned char *) &qi, sizeof(uint64_t));
+            tmp = delta.Mod(qi);
+            //BytesFromZZ((unsigned char *) &tmp_delta, tmp, sizeof(uint64_t));
+            m_delta_mod_q[i] = tmp;
+            tmp = t.Mod(tmp_mod);
+            //BytesFromZZ((unsigned char *) &tmp_t, tmp, sizeof(uint64_t));
+            m_t_mod_q[i] = tmp;
+        }
+
+        BigInteger q = src.modulus();
+        BigInteger q_star;
+        BigInteger tmp, tmp2;
+        m_q_star_mod_p.resize(k);
+        m_q_tilde.resize(k);
+        for(size_t i = 0; i < k; i++){
+            uint64_t tmp_mod = src.moduli(i);
+            ZZ tmp_modulus_zz;
+            tmp_modulus_zz = NTL::ZZFromBytes((const unsigned char *) &tmp_mod, sizeof(uint64_t));
+            q_star = q / tmp_modulus_zz;
+            if(k == 1){
+                assert(q_star == 1);
+            }
+            else{
+                assert(q_star > 1);
+            }
+
+            for(size_t j = 0; j < k_prime; j++){
+                uint64_t tmp_64;
+                tmp_64 = dest.moduli(j);
+                tmp = NTL::ZZFromBytes((const unsigned char *) &tmp_64, sizeof(uint64_t));
+                //tmp %= q_star; //Force to be in range
+                tmp2 = q_star % tmp; //Avoid an extra init
+                long inv_status = NTL::InvModStatus(tmp, tmp2, tmp);
+                if(inv_status){
+                    std::cerr << "ERROR: inverse failed" << std::endl;
+                    std::cerr << std::hex << tmp_64 << std::endl;
+                    std::cerr << std::hex << q_star << std::endl;
+                    assert(!inv_status);
+                }
+                //tmp = q_star % tmp;
+                BytesFromZZ((unsigned char *) &tmp_64, tmp, sizeof(uint64_t));
+                _q_star_mod_p[i].push_back(tmp_64);
+            }
+            tmp = q_star % tmp_modulus_zz;
+            if(k == 1){
+                assert(tmp == 1);
+            }
+
+            assert(tmp < tmp_modulus_zz);
+            assert(tmp != 0);
+
+            uint64_t tmp_64;
+            BytesFromZZ((unsigned char *) &tmp_64, tmp, sizeof(uint64_t));
+            _q_tilde[i] = tmp_64;
+            //TODO scaling parameters
+        }
+        _q_mod_p.resize(k_prime);
+        for(size_t j = 0; j < k_prime; j++){
+            tmp = q % dest.moduli(j);
+            uint64_t tmp_64;
+            BytesFromZZ((unsigned char *) &tmp_64, tmp, sizeof(uint64_t));
+            _q_mod_p[j] = tmp_64;
+        }
+
+        _w_i_mod_t.resize(k);
+        _theta.resize(k);
+        RR t;
+        t = NTL::conv<RR>(dest.modulus());
+        RR t_qtilde_q_i;
+        RR tmp_compare;
+        ZZ integral_part, t_i;
+        for(size_t i = 0; i < k; i++){
+            t_qtilde_q_i = (t*_q_tilde[i])/(FP_TYPE)src.moduli(i);
+            integral_part = FloorToZZ(t_qtilde_q_i);
+            tmp_compare = NTL::conv<RR>(integral_part);
+            assert(t_qtilde_q_i >= tmp_compare);
+            FP_TYPE fractional_part = (FP_TYPE) NTL::conv<FP_TRANS_TYPE>(t_qtilde_q_i - tmp_compare);
+            assert(fractional_part < 1.0);
+            assert(fractional_part >= 0.0);
+            if(fractional_part > 0.5){
+                fractional_part = fractional_part - 1.0;
+                integral_part++;
+            }
+            m_theta[i] = fractional_part;
+            for(size_t j = 0; j < k_prime; j++){
+                t_i = integral_part % dest.moduli(j);
+                uint64_t t_i_64;
+                BytesFromZZ((unsigned char *) & t_i_64, t_i, sizeof(uint64_t));
+                m_w_i_mod_t[i].push_back(t_i_64);
+            }
+        }
+    }
+
+
+    /////////////////////////////////////
     // CKKSrns Scaling Factor
     /////////////////////////////////////
 
@@ -1446,6 +1556,24 @@ protected:
 
     // Stores 2^ptm where ptm - plaintext modulus
     double m_approxSF = 0;
+
+    /////////////////////////////////////
+    // SLAP Scaling Factor
+    /////////////////////////////////////
+
+    std::vector<double> m_q_tilde;
+
+    std::vector<double> m_q_star_mod_p;
+
+    std::vector<double> m_q_mod_p;
+
+    std::vector<double> m_w_i_mod_t;
+
+    std::vector<double> m_theta;
+
+    std::vector<std::vector<NativeInteger>> m_delta_mod_q;
+
+    std::vector<std::vector<NativeInteger>> m_t_mod_q;
 
     /////////////////////////////////////
     // BFVrns : Encrypt
